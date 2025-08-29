@@ -5,7 +5,7 @@
     <div class="page">
         <!-- .page-inner -->
         <div class="page-inner">
-                        <table class="table  table-hover">
+                        <table class="table">
                             <thead>
                               <tr>
                                 <th scope="col">Name</th>
@@ -27,18 +27,21 @@
                                                 }
                                         ?>
                                 <tr>
-                                <td>{{$slide['name']}}</td>
-                                <td>{{$slide['email']}}</td>
-                                <td>{{$slide['message']}}</td>
-                                <td style="display: flex;">
-                                    <a style="border-radius: 40%;  font-size: 14px;" onclick="return confirm('Are you sure you want to delete this item?');" href="{{route('dashboard.contact.contact.allmessage.delete',  $i )}}" class="btn btn-danger">Delete</a>
-                                </td>
+                                    <td>{{$slide['name']}}</td>
+                                    <td>{{$slide['email']}}</td>
+                                    <td>{{$slide['message']}}</td>
+                                    <td>
+                                        <a style="border-radius: 40%; font-size: 14px;" 
+                                        href="{{route('dashboard.contact.contact.allmessage.delete', $i)}}" 
+                                        class="btn btn-danger delete-confirm">Delete</a>
+                                    </td>
                                 </tr>
+                                
                             @endforeach  
                             @else
                             
                             <tr>
-                                <td colspan="5" >No Message ...................</td>
+                                <td colspan="5" >No Messages ...................</td>
                             </tr>
 
                         @endif

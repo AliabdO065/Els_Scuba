@@ -26,7 +26,7 @@
                                 <p class="card-text">{{$slide['details']}}</p>
                                 <p class="card-text">{{$slide['status']}}</p>
                                 <a href="{{route('dashboard.category.edit',  $i )}}" class="btn btn-primary">Edit</a>
-                                <a href="{{route('dashboard.category.delete',  $i )}}" class="btn btn-danger">Delete</a>
+                                <a href="{{route('dashboard.category.delete',  $i )}}"    class="btn btn-danger delete-confirm">Delete</a>
                             </div>
                         </div>
                     @endforeach                        

@@ -17,7 +17,7 @@ class NewsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+    $this->middleware('auth')->except(['comment']);
     }
 
     //public function
@@ -26,7 +26,6 @@ class NewsController extends Controller
         $slides = json_decode($slide, true);
         return $slides['content'];
     }
-
 
     public function news()
     {
@@ -134,7 +133,8 @@ class NewsController extends Controller
             '#x#'.'bimg2=#='.$slide['bimg2'];
 
             return view('dashboard.news.edit' , compact('slide','old'));
-        }
+    }
+
     public function update(Request $request)
     {
         $old =$request->old;
@@ -165,7 +165,7 @@ class NewsController extends Controller
                 '#x#'.'subtitle3=#='.$request->subtitle3.'#x#'.'contentsubtitle3=#='.$request->contentsubtitle3 .
                 '#x#'.'contentend=#='.$request->contentend;
         }
-    else{
+        else{
             $newcontent =
             'status=#='.$request->status.'#x#'.'date=#='.$request->date .
             '#x#'.'title=#='.$request->title.'#x#'.'wordtitle=#='.$request->wordtitle .

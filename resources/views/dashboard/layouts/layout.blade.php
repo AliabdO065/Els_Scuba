@@ -170,6 +170,45 @@
     <script src="{{asset('dashboard/assets/javascript/theme.min.js')}}"></script> <!-- END THEME JS -->
     <!-- BEGIN PAGE LEVEL JS -->
     <script src="{{asset('dashboard/assets/javascript/pages/dashboard-demo.js')}}"></script> <!-- END PAGE LEVEL JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+<script>
+function initDeleteConfirm() {
+document.querySelectorAll('.delete-confirm').forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "This action cannot be undone!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#ff0000',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(this.getAttribute('href'))
+                    .then(() => {
+                        location.reload();
+                    })
+                    .catch(() => {
+                        Swal.fire('Error!', 'Something went wrong.', 'error');
+                    });
+            }
+        });
+    });
+});
+
+
+    
+}
+
+// call it once on page load
+document.addEventListener('DOMContentLoaded', initDeleteConfirm);
+</script>
+
   </body>
 </html>

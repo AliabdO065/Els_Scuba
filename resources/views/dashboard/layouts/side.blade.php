@@ -119,7 +119,7 @@
                 </li><!-- /.menu-item -->
                 <!-- .menu-item -->
                 <li class="menu-item has-child">
-                  <a href="{{route('dashboard.contact.contact.message')}}" class="menu-link"><span class="menu-icon fa fa-users"></span> <span class="menu-text">Contact</span></a> <!-- child menu -->
+                  <a href="{{route('dashboard.contact.contact.index')}}" class="menu-link"><span class="menu-icon fa fa-users"></span> <span class="menu-text">Contact</span></a> <!-- child menu -->
                   <ul class="menu">
                     <li class="menu-item">
                       <a href="{{route('dashboard.contact.contact.index')}}" class="menu-link">Contact page</a>

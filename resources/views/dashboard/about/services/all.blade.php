@@ -51,7 +51,7 @@
                                 <p class="card-text">{{$slide['title2']}}</p>
                                 <hr>
                                 <a href="{{route('dashboard.about.services.edit',  $i )}}" class="btn btn-primary">Edit</a>
-                                <a href="{{route('dashboard.about.services.delete',  $i )}}" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-danger">Delete</a>
+                                <a href="{{route('dashboard.about.services.delete',  $i )}}" class="btn btn-danger delete-confirm">Delete</a>
                             </div>
                         </div>
                     @endforeach    

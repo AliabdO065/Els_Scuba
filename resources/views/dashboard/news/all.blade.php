@@ -37,7 +37,7 @@
                                 <td>{{$slide['status']}}</td>
                                 <td style="display: flex;height: 99px;">
                                     <a style="border-radius: 40%;  font-size: 14px;"  href="{{route('dashboard.news.edit',  $i )}}" class="btn btn-primary">Edit</a> 
-                                    <a style="border-radius: 40%;  font-size: 14px;" onclick="return confirm('Are you sure you want to delete this item?');" href="{{route('dashboard.news.delete', $i )}}" class="btn btn-danger">Delete</a>
+                                    <a style="border-radius: 40%;  font-size: 14px;"   href="{{route('dashboard.news.delete', $i )}}" class="btn btn-danger delete-confirm">Delete</a>
 
 
                                 </td>

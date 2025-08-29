@@ -38,7 +38,7 @@
                                 <td>{{$slide['status']}}</td>
                                 <td style="display: flex;">
                                     <a style="border-radius: 40%;  font-size: 14px;"  href="{{route('dashboard.footer.edit',  $i )}}" class="btn btn-primary">Edit</a> 
-                                    <a style="border-radius: 40%;  font-size: 14px;" href="{{route('dashboard.footer.delete',  $i )}}" class="btn btn-danger">Delete</a>
+                                    <a style="border-radius: 40%;  font-size: 14px;" href="{{route('dashboard.footer.delete',  $i )}}"    class="btn btn-danger delete-confirm">Delete</a>
                                 </td>
                                 </tr>
                             @endforeach  

@@ -1639,15 +1639,15 @@
                     class="elementor-section elementor-top-section elementor-element elementor-element-619c4170 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="619c4170" data-element_type="section">
                     <div class="elementor-background-overlay"></div>
-                    <div class="elementor-container elementor-column-gap-default" style="transform: translate(-50%);left:50%">
+                    <div class="elementor-container elementor-column-gap-default">
                         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-63d2c484"
                             data-id="63d2c484" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
                                 <div class="elementor-element elementor-element-16e31529 elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
                                     data-id="16e31529" data-element_type="widget"
                                     data-widget_type="qi_addons_for_elementor_animated_text.default">
-                                    <div class="elementor-widget-container">
-                                        <div
+                                    <div class="elementor-widget-container" >
+                                        <div  
                                             class="qodef-shortcode qodef-m  qodef-qi-animated-text qodef--animated-by-letter qodef--alignment-left qodef-qi--has-appear qodef--appear-from-right">
                                             <h1 class="qodef-m-title">
 
@@ -1686,7 +1686,7 @@
                     class="elementor-section elementor-top-section elementor-element elementor-element-69d2ad7f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="69d2ad7f" data-element_type="section"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-container elementor-column-gap-default"  style="justify-content: center;">
 
                         @if (!empty($masters[1]))
                             @foreach ($masters as $i => $slides)
@@ -1859,21 +1859,23 @@
                                     data-widget_type="qi_addons_for_elementor_typeout_text.default">
                                     <div class="elementor-widget-container">
                                         <?php
-                                        $header = explode(',', $contact['words']);
-                                        // echo($contact['words']);die;
+                                            $header = preg_split("/[,\.\s]+/", $contact['words'], -1, PREG_SPLIT_NO_EMPTY);
                                         ?>
-                                        <div class="qodef-shortcode qodef-m  qodef-qi-typeout-text"
+                                        <div class="qodef-shortcode qodef-m qodef-qi-typeout-text"
                                             data-strings="[
-						@for ($i = 0; $i < count($header) ; $i++)
-						&quot;{{ $header[$i] }}&quot;,&quot;{{ $header[$i] }}&quot; @endfor					
-					]">
+                                                @for ($i = 0; $i < count($header); $i++)
+                                                    &quot;{{ trim($header[$i]) }}&quot;@if($i + 1 < count($header)),@endif
+                                                @endfor
+                                            ]">
                                             <h2 class="qodef-m-text">
-                                                {{ $contact['wordtitle'] }} <span class="qodef-typeout-holder">
+                                                {{ $contact['wordtitle'] }}
+                                                <span class="qodef-typeout-holder">
                                                     <span class="qodef-typeout"></span>
                                                 </span>
                                             </h2>
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="elementor-element elementor-element-14e8d154 elementor-widget__width-auto animated-slow elementor-invisible elementor-widget elementor-widget-qi_addons_for_elementor_button"
                                     data-id="14e8d154" data-element_type="widget"

@@ -33,7 +33,7 @@
                                 <td>{{$slide['comment']}}</td>
                                 <td>{{$slide['url']}}</td>
                                 <td style="display:revert;">
-                                    <a style="border-radius: 40%;  font-size: 14px;" href="{{route('dashboard.news.allcomments.delete',  $i )}}" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-danger">Delete</a>
+                                    <a style="border-radius: 40%;  font-size: 14px;" href="{{route('dashboard.news.allcomments.delete',  $i )}}"   class="btn btn-danger delete-confirm">Delete</a>
                                 </td>
                                 </tr>
                             @endforeach  

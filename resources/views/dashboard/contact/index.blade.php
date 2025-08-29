@@ -51,6 +51,10 @@
                 <label >Youtube</label>
                 <input type="text" class="form-control" value="{{$slide['youtube']}}" name="youtube" >
             </div>
+            {{-- <div class="mb-3">
+                <label >instagram</label>
+                <input type="text" class="form-control" value="{{$slide['instagram']}}" name="youtube" >
+            </div> --}}
             <button type="submit" class="btn btn-primary">Edit</button>
         </form>
         </div>

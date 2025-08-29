@@ -39,6 +39,7 @@ Route::group(['as'=>'fronted.' ], function () {
 
 
     Route::post('/news/comments', [NewsController::class,'comment'])->name('news.comment'); 
+    Route::post('/contact/message', [ContactController::class,'message'])->name('contact.contact.message');
 
 });
 
@@ -164,7 +165,6 @@ Route::get('/', [HomeController::class,'index'])->name('index');
 Route::get('/contact/contact', [ContactController::class,'contact'])->name('contact.contact.index');
 Route::post('/contact/contact/update/', [ContactController::class,'updatecontact'])->name('contact.contact.update'); 
 // message section
-Route::post('/contact/message', [ContactController::class,'message'])->name('contact.contact.message');
 Route::get('/contact/allmessage', [ContactController::class,'allmessage'])->name('contact.contact.allmessage');
 Route::get('/contact/allmessage/delete/{id}', [ContactController::class,'delete'])->name('contact.contact.allmessage.delete');
 });
@@ -175,3 +175,4 @@ Route::get('login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->
 Route::post('login', 'App\Http\Controllers\Auth\LoginController@login');
 //logout
 Route::get('/logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+

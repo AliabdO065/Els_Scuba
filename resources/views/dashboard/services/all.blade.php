@@ -39,7 +39,7 @@
                                 <h5 class="card-title"style="color: yellow">{{$slide['title3']}}</h5>
                                 <p class="card-text over_flow" style="width: max-content;">{{$slide['contenttitle3']}}</p>
                                 <a href="{{route('dashboard.services.edit',  $i )}}" class="btn btn-primary">Edit</a>
-                                <a href="{{route('dashboard.services.delete',  $i )}}" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-danger">Delete</a>
+                                <a href="{{route('dashboard.services.delete',  $i )}}"   class="btn btn-danger delete-confirm">Delete</a>
                             </div>
                         </div>
                     @endforeach                        

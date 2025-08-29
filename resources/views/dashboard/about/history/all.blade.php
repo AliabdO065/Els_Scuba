@@ -27,7 +27,7 @@
                                 <p class="card-text" style="font-size: smaller">{{$slide['wordheader']}}</p>
                                 <p class="card-text">{{$slide['date']}}</p>
                                 <a href="{{route('dashboard.about.history.edit',  $i )}}" class="btn btn-primary">Edit</a>
-                                <a href="{{route('dashboard.about.history.delete',  $i )}}" class="btn btn-danger">Delete</a>
+                                <a href="{{route('dashboard.about.history.delete',  $i )}}" class="btn btn-danger delete-confirm">Delete</a>
                             </div>
                         </div>
                     @endforeach                        

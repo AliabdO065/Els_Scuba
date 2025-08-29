@@ -25,7 +25,7 @@
                                 <h5 class="card-title">{{$slide['title']}}</h5>
                                 <p class="card-text">{{$slide['details']}}</p>
                                 <a href="{{route('dashboard.slide.edit',  $i )}}" class="btn btn-primary">Edit</a>
-                                <a href="{{route('dashboard.slide.delete',  $i )}}" class="btn btn-danger">Delete</a>
+                                <a href="{{route('dashboard.slide.delete',  $i )}}" class="btn btn-danger delete-confirm">Delete</a>
                             </div>
                         </div>
                     @endforeach                        
