@@ -1,5 +1,4 @@
-
-.btn-danger {
+ .btn-danger {
   color: #ffffff;
   background-color: #f5a623;
   border-color: #f5a623;
@@ -45,7 +44,6 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
       border-color: #f5a623 !important;
       box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.5)  !important;
 }
- 
 
 .alert-danger {
     font-weight: 900 !important;

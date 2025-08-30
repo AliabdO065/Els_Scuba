@@ -77,196 +77,169 @@
 
     <body
         class="page-template page-template-elementor_header_footer page page-id-998 qodef-qi--no-touch qi-addons-for-elementor-1.6.5 elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-998">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-            role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-            <defs>
-                <filter id="wp-duotone-dark-grayscale">
-                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0 0.49803921568627" />
-                        <feFuncG type="table" tableValues="0 0.49803921568627" />
-                        <feFuncB type="table" tableValues="0 0.49803921568627" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-            role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-            <defs>
-                <filter id="wp-duotone-grayscale">
-                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0 1" />
-                        <feFuncG type="table" tableValues="0 1" />
-                        <feFuncB type="table" tableValues="0 1" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-            role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-            <defs>
-                <filter id="wp-duotone-purple-yellow">
-                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
-                        <feFuncG type="table" tableValues="0 1" />
-                        <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-            role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-            <defs>
-                <filter id="wp-duotone-blue-red">
-                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0 1" />
-                        <feFuncG type="table" tableValues="0 0.27843137254902" />
-                        <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-            role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-            <defs>
-                <filter id="wp-duotone-midnight">
-                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0 0" />
-                        <feFuncG type="table" tableValues="0 0.64705882352941" />
-                        <feFuncB type="table" tableValues="0 1" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-            role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-            <defs>
-                <filter id="wp-duotone-magenta-yellow">
-                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0.78039215686275 1" />
-                        <feFuncG type="table" tableValues="0 0.94901960784314" />
-                        <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-            role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-            <defs>
-                <filter id="wp-duotone-purple-green">
-                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
-                        <feFuncG type="table" tableValues="0 1" />
-                        <feFuncB type="table" tableValues="0.44705882352941 0.4" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-            role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-            <defs>
-                <filter id="wp-duotone-blue-orange">
-                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0.098039215686275 1" />
-                        <feFuncG type="table" tableValues="0 0.66274509803922" />
-                        <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
+      
+        {{-- 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+                <defs>
+                    <filter id="wp-duotone-dark-grayscale">
+                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                        <feComponentTransfer color-interpolation-filters="sRGB">
+                            <feFuncR type="table" tableValues="0 0.49803921568627" />
+                            <feFuncG type="table" tableValues="0 0.49803921568627" />
+                            <feFuncB type="table" tableValues="0 0.49803921568627" />
+                            <feFuncA type="table" tableValues="1 1" />
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+                <defs>
+                    <filter id="wp-duotone-grayscale">
+                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                        <feComponentTransfer color-interpolation-filters="sRGB">
+                            <feFuncR type="table" tableValues="0 1" />
+                            <feFuncG type="table" tableValues="0 1" />
+                            <feFuncB type="table" tableValues="0 1" />
+                            <feFuncA type="table" tableValues="1 1" />
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+                <defs>
+                    <filter id="wp-duotone-purple-yellow">
+                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                        <feComponentTransfer color-interpolation-filters="sRGB">
+                            <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                            <feFuncG type="table" tableValues="0 1" />
+                            <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                            <feFuncA type="table" tableValues="1 1" />
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+                <defs>
+                    <filter id="wp-duotone-blue-red">
+                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                        <feComponentTransfer color-interpolation-filters="sRGB">
+                            <feFuncR type="table" tableValues="0 1" />
+                            <feFuncG type="table" tableValues="0 0.27843137254902" />
+                            <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                            <feFuncA type="table" tableValues="1 1" />
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+                <defs>
+                    <filter id="wp-duotone-midnight">
+                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                        <feComponentTransfer color-interpolation-filters="sRGB">
+                            <feFuncR type="table" tableValues="0 0" />
+                            <feFuncG type="table" tableValues="0 0.64705882352941" />
+                            <feFuncB type="table" tableValues="0 1" />
+                            <feFuncA type="table" tableValues="1 1" />
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+                <defs>
+                    <filter id="wp-duotone-magenta-yellow">
+                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                        <feComponentTransfer color-interpolation-filters="sRGB">
+                            <feFuncR type="table" tableValues="0.78039215686275 1" />
+                            <feFuncG type="table" tableValues="0 0.94901960784314" />
+                            <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                            <feFuncA type="table" tableValues="1 1" />
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+                <defs>
+                    <filter id="wp-duotone-purple-green">
+                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                        <feComponentTransfer color-interpolation-filters="sRGB">
+                            <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                            <feFuncG type="table" tableValues="0 1" />
+                            <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                            <feFuncA type="table" tableValues="1 1" />
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in" />
+                    </filter>
+                </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+                <defs>
+                    <filter id="wp-duotone-blue-orange">
+                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                        <feComponentTransfer color-interpolation-filters="sRGB">
+                            <feFuncR type="table" tableValues="0.098039215686275 1" />
+                            <feFuncG type="table" tableValues="0 0.66274509803922" />
+                            <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                            <feFuncA type="table" tableValues="1 1" />
+                        </feComponentTransfer>
+                        <feComposite in2="SourceGraphic" operator="in" />
+                    </filter>
+                </defs>
+            </svg>
+        --}}
+        
         <div id="page" class="hfeed site">
             <header id="masthead" class="site-header" role="banner">
-                <div class="header-wrap" data-parallax-video="">
+                <div class="header-wrap" data-parallax-video="" style="background-color: white;">
                     <div class="header-wrap-inner">
-                        <div class="site-branding">
-                            <div class="site-branding-wrap">
-                                <div class="site-branding-left">
-                                </div> <!-- .site-branding-left -->
-
-                                <div class="site-branding-center">
-                                    <h1 class="site-title">
-                                        <a href="{{ route('fronted.index') }}" rel="home">
-                                            <span class="screen-reader-text">
-                                                energify </span>
-                                            <span class="site-title-text">
-                                                energify </span>
-                                        </a>
-                                    </h1> <!-- .site-title -->
-                                    <p class="site-description">
-                                    </p> <!-- .site-description -->
-                                </div> <!-- .site-branding-center -->
-                                <div class="site-branding-right">
-                                </div> <!-- .site-branding-right -->
-                            </div> <!-- .site-branding-wrap -->
-                        </div> <!-- .site-branding -->
-
+                        <div class="site-branding" >
+                            @include('fronted.layouts.components.logo')
+                        </div>  
+                        <style>
+                            .site-title {
+                                color: white;
+                            }
+                            .site-title {
+                                color: #1f416a !important;
+                            }
+                        </style>
                         <nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
                             <div class="menu-wrap">
                                 <div class="layout-medium">
-                                    <a class="menu-toggle">
-                                        <span class="lines"></span>
-                                    </a> <!-- .menu-toggle -->
-                                    <div class="nav-menu">
-                                        <ul id="menu-main-menu" class="">
-                                            <li id="menu-item-847"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-847">
-                                                <a href="{{ route('fronted.index') }}">Home</a></li>
-                                            <li id="menu-item-1001"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
-                                                <a href="{{ route('fronted.about') }}">About Us</a></li>
-                                            <li id="menu-item-1247"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247">
-                                                <a href="{{ route('fronted.services') }}">Services</a></li>
-                                            <li id="menu-item-1729"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729">
-                                                <a href="{{ route('fronted.projects') }}">Projects</a></li>
-                                            <li id="menu-item-6411"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6411">
-                                                <a href="{{ route('fronted.news') }}">News</a></li>
-                                            <li id="menu-item-1000"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-998 current_page_item menu-item-1000">
-                                                <a href="{{ route('fronted.contact') }}" aria-current="page">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div> <a class="search-toggle toggle-link"></a>
-
-
-                                </div> <!-- .layout-medium -->
-                            </div> <!-- .menu-wrap -->
-                        </nav> <!-- #site-navigation .main-navigation .site-navigation -->
-                    </div> <!-- .header-wrap-inner -->
-                </div> <!-- .header-wrap -->
-            </header> <!-- #masthead .site-header -->
+									@include('fronted.layouts.components.nav')
+                                </div> 
+                            </div> 
+                        </nav> 
+                    </div> 
+                </div> 
+            </header> 
             <div data-elementor-type="wp-page" data-elementor-id="998" class="elementor elementor-998">
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-562f097e elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
                     data-id="562f097e" data-element_type="section"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-container elementor-column-gap-default" style="min-height: 560px;">
                         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-65ac41bf"
                             data-id="65ac41bf" data-element_type="column">
                             <div class="elementor-widget-wrap">
@@ -719,23 +692,29 @@
                                             }
                                         </style>
                                         <div class="elementor-social-icons-wrapper elementor-grid">
-                                            <span class="elementor-grid-item">
+                                            <span style="visibility: hidden" class="elementor-grid-item">
                                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-7d7dc66"
                                                     href="{{ $main['facebook'] }}" target="_blank">
                                                     <span class="elementor-screen-only">Facebook</span>
                                                     <i class="fab fa-facebook"></i> </a>
                                             </span>
-                                            <span class="elementor-grid-item">
+                                            <span style="visibility: hidden" class="elementor-grid-item">
                                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-469030c"
                                                     href="{{ $main['twitter'] }}" target="_blank">
                                                     <span class="elementor-screen-only">Twitter</span>
                                                     <i class="fab fa-twitter"></i> </a>
                                             </span>
-                                            <span class="elementor-grid-item">
+                                            <span style="visibility: hidden" class="elementor-grid-item">
                                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-0c5b5a6"
                                                     href="{{ $main['youtube'] }}" target="_blank">
                                                     <span class="elementor-screen-only">Youtube</span>
                                                     <i class="fab fa-youtube"></i> </a>
+                                            </span>
+                                            <span class="elementor-grid-item">
+                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-bd43e8d"
+                                                    href="{{ $main['instagram'] }}" target="_blank">
+                                                    <span class="elementor-screen-only">Instagram</span>
+                                                    <i class="fab fa-instagram fa-3x"></i></a>
                                             </span>
                                         </div>
                                     </div>
@@ -807,7 +786,9 @@
                                                             id="wpforms-submit-8584" class="wpforms-submit"
                                                             data-alt-text="Sending..." data-submit-text="Submit"
                                                             aria-live="assertive"
-                                                            value="wpforms-submit">Submit</button><img decoding="async"
+                                                            value="wpforms-submit"
+                                                            style="background-color:#346cb0">Send</button>
+                                                            <img decoding="async"
                                                             src="../wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg"
                                                             class="wpforms-submit-spinner" style="display: none;"
                                                             width="26" height="26" alt="Loading">
@@ -826,7 +807,8 @@
                     data-id="f3c79cf" data-element_type="section"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
                     <div class="elementor-background-overlay"></div>
-                    <div class="elementor-container elementor-column-gap-default">
+
+                    <div class="elementor-container elementor-column-gap-default" style="justify-content: center">
 
                         @if (!empty($footer[0]))
                             @foreach ($footer as $item)
@@ -903,14 +885,11 @@
                             @endforeach
                         @endif
                     </div>
+
                 </section>
             </div>
-            <footer id="colophon" class="site-footer" role="contentinfo">
-                <div class="site-info">
+                @include('fronted.layouts.components.contentinfo')
 
-                    <p>© {{ now()->year }} Netzero Company</p>
-                </div> <!-- .site-info -->
-            </footer> <!-- #colophon .site-footer -->
         </div>
 
         <link rel='stylesheet' id='e-animations-css'

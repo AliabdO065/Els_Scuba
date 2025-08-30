@@ -206,71 +206,16 @@
         </svg>
         <div id="page" class="hfeed site">
             <header id="masthead" class="site-header" role="banner">
-                <div class="header-wrap" data-parallax-video="">
+                <div class="header-wrap" data-parallax-video="" style="background-color: white;">
                     <div class="header-wrap-inner">
                         <div class="site-branding">
-                            <div class="site-branding-wrap">
-                                <div class="site-branding-left">
-                                </div> <!-- .site-branding-left -->
-
-                                <div class="site-branding-center">
-                                    <h1 class="site-title">
-                                        <a href="{{ route('fronted.index') }}" rel="home">
-                                            <span class="screen-reader-text">
-                                                Els Scuba </span>
-                                            <span class="site-title-text">
-                                                Els Scuba </span>
-                                        </a>
-                                    </h1> <!-- .site-title -->
-                                    <p class="site-description">
-                                    </p> <!-- .site-description -->
-                                </div> <!-- .site-branding-center -->
-                                <div class="site-branding-right">
-                                </div> <!-- .site-branding-right -->
-                            </div> <!-- .site-branding-wrap -->
-                        </div> <!-- .site-branding -->
+                            @include('fronted.layouts.components.logo')
+                        </div>
 
                         <nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
                             <div class="menu-wrap">
-                                <div class="layout-medium">
-                                    <a class="menu-toggle">
-                                        <span class="lines"></span>
-                                    </a> <!-- .menu-toggle -->
-                                    <div class="nav-menu">
-                                        <ul id="menu-main-menu" class="">
-                                            <li id="menu-item-847"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-847">
-                                                <a href="{{ route('fronted.index') }}" aria-current="page">Home</a></li>
-                                            <li id="menu-item-1001"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
-                                                <a href="{{ route('fronted.about') }}">About Us</a></li>
-                                            <li id="menu-item-1247"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247">
-                                                <a href="{{ route('fronted.services') }}">Services</a></li>
-                                            <li id="menu-item-1729"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729">
-                                                <a href="{{ route('fronted.projects') }}">Projects</a></li>
-                                            <li id="menu-item-6411"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6411">
-                                                <a href="{{ route('fronted.news') }}">News</a></li>
-                                            <li id="menu-item-1000"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000">
-                                                <a href="{{ route('fronted.contact') }}">Contact</a></li>
-                                        </ul>
-                                    </div> <a class="search-toggle toggle-link"></a>
-
-                                    {{-- <div class="search-container">
-												<div class="search-box">
-													<form class="search-form" method="get" action="https://themes.pixelwars.org/energify/demo-01/">
-														<label>
-															<span>
-																Search for															</span>
-															<input type="search" id="search-field" name="s" placeholder="type and hit enter">
-														</label>
-														<input type="submit" class="search-submit" value="Search">
-													</form>   
-												</div>  
-											</div>  --}}
+                                <div class="layout-medium" >
+                              @include('fronted.layouts.components.nav')
                                 </div>
                             </div> <!-- .menu-wrap -->
                         </nav> <!-- #site-navigation .main-navigation .site-navigation -->
@@ -1907,9 +1852,8 @@
                     data-id="3fbae2fc" data-element_type="section"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
                     <div class="elementor-background-overlay"></div>
-                    <div class="elementor-container elementor-column-gap-default">
-                        {{-- //item --}}
-
+                    <div class="elementor-container elementor-column-gap-default" style="justify-content: center">
+ 
 
                         @if (!empty($footer[0]))
                             @foreach ($footer as $item)
@@ -1983,12 +1927,8 @@
                     </div>
                 </section>
             </div>
-            <footer id="colophon" class="site-footer" role="contentinfo">
-                <div class="site-info">
+                @include('fronted.layouts.components.contentinfo')
 
-                    <p> © {{ now()->year }} Netzero Company</p>
-                </div> <!-- .site-info -->
-            </footer> <!-- #colophon .site-footer -->
         </div>
 
         <link rel='stylesheet' id='ps-general-css'

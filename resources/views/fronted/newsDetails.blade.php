@@ -180,58 +180,14 @@
             <header id="masthead" class="site-header" role="banner">
                 <div class="header-wrap" data-parallax-video="">
                     <div class="header-wrap-inner">
-                        <div class="site-branding">
-                            <div class="site-branding-wrap">
-                                <div class="site-branding-left">
-                                </div> <!-- .site-branding-left -->
-
-                                <div class="site-branding-center">
-                                    <h1 class="site-title">
-                                        <a href="{{ route('fronted.index') }}" rel="home" style="color: black">
-                                            <span class="screen-reader-text">
-                                                energify </span>
-                                            <span class="site-title-text">
-                                                energify </span>
-                                        </a>
-                                    </h1> <!-- .site-title -->
-                                    <p class="site-description">
-                                    </p> <!-- .site-description -->
-                                </div> <!-- .site-branding-center -->
-                                <div class="site-branding-right">
-                                </div> <!-- .site-branding-right -->
-                            </div> <!-- .site-branding-wrap -->
+                        <div class="site-branding" style="color: #1f416a">
+                            @include('fronted.layouts.components.logo')
                         </div> <!-- .site-branding -->
 
                         <nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
-                            <div class="menu-wrap" style="color: black">
+                            <div class="menu-wrap" style="color: #1f416a">
                                 <div class="layout-medium">
-                                    <a class="menu-toggle">
-                                        <span class="lines"></span>
-                                    </a> <!-- .menu-toggle -->
-                                    <div class="nav-menu">
-                                        <ul id="menu-main-menu" class="">
-                                            <li id="menu-item-847"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-847">
-                                                <a href="{{ route('fronted.index') }}">Home</a></li>
-                                            <li id="menu-item-1001"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
-                                                <a href="{{ route('fronted.about') }}">About Us</a></li>
-                                            <li id="menu-item-1247"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247">
-                                                <a href="{{ route('fronted.services') }}">Services</a></li>
-                                            <li id="menu-item-1729"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729">
-                                                <a href="{{ route('fronted.projects') }}">Projects</a></li>
-                                            <li id="menu-item-6411"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-6411">
-                                                <a href="{{ route('fronted.news') }}">News</a></li>
-                                            <li id="menu-item-1000"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000">
-                                                <a href="{{ route('fronted.contact') }}">Contact</a></li>
-                                        </ul>
-                                    </div> <a class="search-toggle toggle-link"></a>
-
-
+                                    @include('fronted.layouts.components.nav')
                                 </div> <!-- .layout-medium -->
                             </div> <!-- .menu-wrap -->
                         </nav> <!-- #site-navigation .main-navigation .site-navigation -->
@@ -555,13 +511,7 @@
                     </div> <!-- #primary .content-area -->
                 </div> <!-- layout -->
             </div> <!-- #main .site-main -->
-
-            <footer id="colophon" class="site-footer" role="contentinfo">
-                <div class="site-info">
-
-                    <p>@ {{ now()->year }} Netzero Company</p>
-                </div> <!-- .site-info -->
-            </footer> <!-- #colophon .site-footer -->
+                @include('fronted.layouts.components.contentinfo')
         </div>
 
         <style id='core-block-supports-inline-css' type='text/css'>

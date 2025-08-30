@@ -72,9 +72,10 @@ class ContactController extends Controller
             'facebook' => ['required', new DisallowedWords],
             'twitter' => ['required', new DisallowedWords],
             'youtube' => ['required', new DisallowedWords],
+            'instagram' => ['required', new DisallowedWords],
         ]);
         $newcontent = 'header=#=' . $request->header . '#x#' . 'wordheader=#=' . $request->wordheader . '#x#' . 'phone=#=' . $request->phone . '#x#' .
-            'facebook=#=' . $request->facebook . '#x#' . 'twitter=#=' . $request->twitter . '#x#' . 'youtube=#=' . $request->youtube;
+            'facebook=#=' . $request->facebook . '#x#' . 'twitter=#=' . $request->twitter . '#x#' . 'youtube=#=' . $request->youtube . '#x#' . 'instagram=#=' . $request->instagram;
         Contact::find(1)->update(['content' => $newcontent]);
         return redirect()->route('dashboard.contact.contact.index');
     }

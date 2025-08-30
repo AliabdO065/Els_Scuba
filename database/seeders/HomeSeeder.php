@@ -14,6 +14,7 @@ class HomeSeeder extends Seeder
      */
     public function run()
     {
+
         DB::table('sections_home')->insert([
             [
                 'name' => 'slider',
@@ -82,6 +83,7 @@ class HomeSeeder extends Seeder
                 'content' => 'status=#=disappea#x#header=#=Empowering you with clean energy#x#title1=#=Solar Panel Installation#x#contenttitle1=#=A solar energy company can provide professional installation services for solar panels on residential, commercial, or industrial properties. This includes assessing the site, designing the system, obtaining necessary permits, and safely installing the solar panels#x#title2=#=System Design and Engineering#x#contenttitle2=#=Solar energy companies can offer system design and engineering services, customizing solar solutions to meet the specific energy needs and requirements of their clients. This includes determining the optimal placement of solar panels, calculating system size, and designing the electrical components.#x#title3=#=Solar Energy Consultation#x#contenttitle3=#=Companies can provide consultation services to guide customers through the process of transitioning to solar energy. This may involve analyzing energy consumption, conducting site assessments, and advising on the most suitable solar solutions based on the customer\'s goals and budget.#x#img=#=images\services\s1.jpg#xt#status=#=disappea#x#header=#=Light up your life with solar energy#x#title1=#=Energy Efficiency Audits#x#contenttitle1=#=Solar energy companies can assess the energy efficiency of buildings and recommend energy-saving measures. By identifying areas of energy waste, they can help clients optimize their energy usage and maximize the benefits of solar energy systems#x#title2=#=Maintenance and Monitoring#x#contenttitle2=#=Solar energy companies can assess the energy efficiency of buildings and recommend energy-saving measures. By identifying areas of energy waste, they can help clients optimize their energy usage and maximize the benefits of solar energy systems#x#title3=#=Battery Storage Solutions#x#contenttitle3=#=Some solar energy companies offer battery storage systems to store excess solar energy for use during times of low sunlight or power outages. These systems allow customers to increase self-consumption of solar power and enhance energy independence#x#img=#=images\services\s2.jpg',
             ],
         ]);
+
         DB::table('sections_projects')->insert([
             [
                 'name' => 'projects',
@@ -89,7 +91,6 @@ class HomeSeeder extends Seeder
             ],
         ]);
 
-//done
         DB::table('sections_news')->insert([
             [
                 'name' => 'news',
@@ -100,15 +101,18 @@ class HomeSeeder extends Seeder
                 'content' => '',
             ],
         ]);
+
+        
         DB::table('sections_contact')->insert([
             [
                 'name' => 'contact',
-                'content' => 'header=#=Let\'s Talk#x#wordheader=#=Got a project on your mind? Let\'s discuss about the details#x#phone=#=+12 9887 234 122#x#facebook=#=##x#twitter=#=##x#youtube=#=#',
+                 'content' => "header=#=Let's Talk#x#wordheader=#=Got a project on your mind? Let's discuss about the details#x#phone=#=+12 9887 234 122#x#facebook=#=##x#twitter=#=##x#youtube=#=##x#instagram=#=#",
             ],
             [
                 'name' => 'message',
                 'content' => '',
             ],
         ]);
+
     }
 }
