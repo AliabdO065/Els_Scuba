@@ -1678,18 +1678,18 @@
                                                                 {{ $slide['name'] }} </h4>
                                                             <p class="qodef-m-role">{{ $slide['position'] }}</p>
                                                             <div class="qodef-m-social-icons">
-                                                                <a class="qodef-e-social-icon-link" itemprop="url"
+                                                                {{-- <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['facebook'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">
                                                                         <i aria-hidden="true"
                                                                             class="fab fa-facebook-f"></i> </span>
-                                                                </a>
-                                                                <a class="qodef-e-social-icon-link" itemprop="url"
+                                                                </a> --}}
+                                                                {{-- <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['twitter'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">
                                                                         <i aria-hidden="true"
                                                                             class="fab fa-twitter"></i> </span>
-                                                                </a>
+                                                                </a> --}}
                                                                 <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['insta'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">

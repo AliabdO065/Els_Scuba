@@ -211,19 +211,12 @@
         
         <div id="page" class="hfeed site">
             <header id="masthead" class="site-header" role="banner">
-                <div class="header-wrap" data-parallax-video="" style="background-color: white;">
+                <div class="header-wrap" data-parallax-video="">
                     <div class="header-wrap-inner">
                         <div class="site-branding" >
                             @include('fronted.layouts.components.logo')
                         </div>  
-                        <style>
-                            .site-title {
-                                color: white;
-                            }
-                            .site-title {
-                                color: #1f416a !important;
-                            }
-                        </style>
+                     
                         <nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
                             <div class="menu-wrap">
                                 <div class="layout-medium">

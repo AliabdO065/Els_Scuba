@@ -17,12 +17,12 @@
     ">
         <img src="{{ asset('images/logo.jpg') }}" 
              alt="Els Scuba Logo" 
-             style="display:block; width:50px; height:50px; object-fit:cover; border-radius:50%;">
+             style="display:block; width:80px; height:85px; object-fit:cover; border-radius:50%;margin-left: 30px;">
     </div>
 
     <!-- Text part -->
     <div>
-        <h1 class="site-title" style="margin:0; font-size:28px; color:#1f416a;">
+        <h1 class="site-title" style="margin:0; font-size:28px; color:#3064af;">
             Elsscuba
         </h1>
         <p class="site-description" style="margin:0; font-size:14px; color:#666;">

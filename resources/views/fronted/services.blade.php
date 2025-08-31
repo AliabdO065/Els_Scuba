@@ -119,7 +119,7 @@
 			}
 
 			.accordion .content.open {
-				padding: 70px;
+				/* padding: 70px; */
 			}
     </style>
     </head>
@@ -249,7 +249,7 @@
         </svg>
         <div id="page" class="hfeed site">
             <header id="masthead" class="site-header" role="banner">
-                <div class="header-wrap" data-parallax-video="" style="background-color: white;">
+                <div class="header-wrap" data-parallax-video="">
                     <div class="header-wrap-inner">
                         <div class="site-branding" style="color: #1f416a">
                               @include('fronted.layouts.components.logo')
@@ -1016,18 +1016,18 @@
                                                                 {{ $slide['name'] }} </h4>
                                                             <p class="qodef-m-role">{{ $slide['position'] }}</p>
                                                             <div class="qodef-m-social-icons">
-                                                                <a class="qodef-e-social-icon-link" itemprop="url"
+                                                                {{-- <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['facebook'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">
                                                                         <i aria-hidden="true"
                                                                             class="fab fa-facebook-f"></i> </span>
-                                                                </a>
-                                                                <a class="qodef-e-social-icon-link" itemprop="url"
+                                                                </a> --}}
+                                                                {{-- <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['twitter'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">
                                                                         <i aria-hidden="true" class="fab fa-twitter"></i>
                                                                     </span>
-                                                                </a>
+                                                                </a> --}}
                                                                 <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['insta'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">

@@ -205,7 +205,7 @@
         </svg>
         <div id="page" class="hfeed site">
             <header id="masthead" class="site-header" role="banner">
-                <div class="header-wrap" data-parallax-video="" style="background-color: white;">
+                <div class="header-wrap" data-parallax-video="">
                     <div class="header-wrap-inner">
                         <div class="site-branding">
                             <div class="site-branding-wrap">
@@ -334,6 +334,8 @@
                                     data-id="132acafc" data-element_type="widget"
                                     data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}"
                                     data-widget_type="qi_addons_for_elementor_cards_slider.default">
+                                  
+                                  
                                     <div class="elementor-widget-container">
                                         <div class="qodef-shortcode qodef-m  qodef-qi-cards-slider qodef-orientation--one-side qodef-navigation--hover-move qodef-orientation--left"
                                             data-orientation="left" data-offset="24">
@@ -341,21 +343,21 @@
                                                 <div class="qodef-m-card">
                                                     <div class="qodef-m-bundle-item">
                                                         <img decoding="async" src="{{ asset($main['img1']) }}"
-                                                            alt="" width="1000" height="1000" />
+                                                            alt="" width="1000" height="1000" style="width: 400px; height: 300px; object-fit: cover;"/>
                                                     </div>
                                                 </div>
                                                 <div class="qodef-m-card">
                                                     <div class="qodef-m-bundle-item">
                                                         <img decoding="async" loading="lazy"
                                                             src="{{ asset($main['img2']) }}" alt=""
-                                                            width="1000" height="1000" />
+                                                            width="1000" height="1000" style="width: 400px; height: 300px; object-fit: cover;"/>
                                                     </div>
                                                 </div>
                                                 <div class="qodef-m-card">
                                                     <div class="qodef-m-bundle-item">
                                                         <img decoding="async" loading="lazy"
                                                             src="{{ asset($main['img3']) }}" alt=""
-                                                            width="1000" height="1000" />
+                                                            width="1000" height="1000" style="width: 400px; height: 300px; object-fit: cover;"/>
                                                     </div>
                                                 </div>
                                             </div>
@@ -392,6 +394,8 @@
                                             </div>
                                         </div>
                                     </div>
+                                
+                                
                                 </div>
                             </div>
                         </div>
@@ -448,108 +452,7 @@
                         </div>
                     </div>
                 </section>
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-28c8323 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="28c8323" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-354a12be"
-                            data-id="354a12be" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-626ece1 elementor-widget elementor-widget-qi_addons_for_elementor_timeline"
-                                    data-id="626ece1" data-element_type="widget"
-                                    data-widget_type="qi_addons_for_elementor_timeline.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="qodef-shortcode qodef-m  qodef-qi-timeline qodef-timeline--horizontal qodef-layout--columns qodef-timeline-layout--horizontal-alternating  qodef-point--standard qodef-qi--has-appear  "
-                                            data-options="{&quot;colNum&quot;:&quot;3&quot;,&quot;colNum1440&quot;:&quot;3&quot;,&quot;colNum1366&quot;:&quot;3&quot;,&quot;colNum1024&quot;:&quot;3&quot;,&quot;colNum768&quot;:&quot;2&quot;,&quot;colNum680&quot;:&quot;1&quot;,&quot;colNum480&quot;:&quot;1&quot;}">
-                                            <div class="qodef-nav-prev">
-                                                <svg class="qodef-swiper-arrow-left" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                    viewBox="0 0 34.2 32.3" xml:space="preserve"
-                                                    style="stroke-width: 2;">
-                                                    <line x1="0.5" y1="16" x2="33.5" y2="16" />
-                                                    <line x1="0.3" y1="16.5" x2="16.2" y2="0.7" />
-                                                    <line x1="0" y1="15.4" x2="16.2" y2="31.6" />
-                                                </svg>
-                                            </div>
-                                            <div class="qodef-nav-next">
-                                                <svg class="qodef-swiper-arrow-right" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                    viewBox="0 0 34.2 32.3" xml:space="preserve"
-                                                    style="stroke-width: 2;">
-                                                    <line x1="0" y1="16" x2="33" y2="16" />
-                                                    <line x1="17.3" y1="0.7" x2="33.2" y2="16.5" />
-                                                    <line x1="17.3" y1="31.6" x2="33.5" y2="15.4" />
-                                                </svg>
-                                            </div>
 
-                                            <div class="qodef-grid-inner">
-                                                {{-- //////////////////// --}}
-                                                @if (!empty($history[0]))
-                                                    <?php $c = 1; ?>
-                                                    @foreach ($history as $i => $slides)
-                                                        <?php
-                                                        $string = $slides;
-                                                        $pairs = explode('#x#', $string);
-                                                        $slide = [];
-                                                        foreach ($pairs as $pair) {
-                                                            [$key, $value] = explode('=#=', $pair);
-                                                            $slide[$key] = $value;
-                                                        }
-                                                        if ($slide['status'] == 'disappear') {
-                                                            continue;
-                                                        }
-                                                        
-                                                        ?>
-                                                        <div
-                                                            class="qodef-e qodef-e-item qodef-grid-item elementor-repeater-item-1b6da1d 
-			<?php if ($c % 2 == 0) {
-       echo 'qodef-obverse';
-       $c++;
-   } else {
-       echo 'qodef-reverse';
-       $c++;
-   } ?>">
-                                                            <div class="qodef-e-line-holder">
-                                                                <span class="qodef-e-line"></span>
-                                                            </div>
-                                                            <div class="qodef-e-item-inner">
-                                                                <div class="qodef-e-point-holder">
-                                                                    <div class="qodef-e-point">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="qodef-e-top-holder">
-                                                                    <div class="qodef-e-image">
-                                                                        <img width="1920" height="1013"
-                                                                            src="{{ asset($slide['img']) }}"
-                                                                            class="attachment-full size-full"
-                                                                            alt="" decoding="async"
-                                                                            loading="lazy"
-                                                                            srcset="{{ asset($slide['img']) }}"
-                                                                            sizes="(max-width: 1920px) 100vw, 1920px" />
-                                                                    </div>
-                                                                </div>
-                                                                <div class="qodef-e-content-holder">
-                                                                    <h4 class="qodef-e-title">
-                                                                        {{ $slide['header'] }} </h4>
-                                                                    <p class="qodef-e-text">
-                                                                        {{ $slide['wordheader'] }} </p>
-                                                                    <div class="qodef-e-date">
-                                                                        {{ $slide['date'] }} </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                @endif
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-3abfb8b1 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="3abfb8b1" data-element_type="section">
@@ -719,11 +622,11 @@
                                                                     <div class="qodef-e-main-image"
                                                                         data-parallax-main="60">
                                                                         <img width="650" height="650"
-                                                                            src="../wp-content/uploads/sites/2/2023/07/modern-container-battery-energy-storage-power-plant-system-accompanied-with-solar-panels-wind-turbine-system-situated-nature-with-mount-st-helens-background-3d-ren-2"
+                                                                            src="{{ asset($slide['img']) }}"
                                                                             class="attachment-qi_addons_for_elementor_image_size_square size-qi_addons_for_elementor_image_size_square"
                                                                             alt="" decoding="async"
                                                                             loading="lazy"
-                                                                            srcset="https://themes.pixelwars.org/energify/demo-01/wp-content/uploads/sites/2/2023/07/modern-container-battery-energy-storage-power-plant-system-accompanied-with-solar-panels-wind-turbine-system-situated-nature-with-mount-st-helens-background-3d-rendering-650x650.jpg 650w, https://themes.pixelwars.org/energify/demo-01/wp-content/uploads/sites/2/2023/07/modern-container-battery-energy-storage-power-plant-system-accompanied-with-solar-panels-wind-turbine-system-situated-nature-with-mount-st-helens-background-3d-rendering-150x150.jpg 150w, https://themes.pixelwars.org/energify/demo-01/wp-content/uploads/sites/2/2023/07/modern-container-battery-energy-storage-power-plant-system-accompanied-with-solar-panels-wind-turbine-system-situated-nature-with-mount-st-helens-background-3d-rendering-550x550.jpg 550w, https://themes.pixelwars.org/energify/demo-01/wp-content/uploads/sites/2/2023/07/modern-container-battery-energy-storage-power-plant-system-accompanied-with-solar-panels-wind-turbine-system-situated-nature-with-mount-st-helens-background-3d-rendering-300x300.jpg 300w"
+                                                                            srcset="{{ asset($slide['img']) }}"
                                                                             sizes="(max-width: 650px) 100vw, 650px" />
                                                                     </div>
                                                                 </div>
@@ -827,6 +730,7 @@
                                     data-id="39a2fd70" data-element_type="widget"
                                     data-widget_type="qi_addons_for_elementor_image_gallery_masonry.default">
                                     <div class="elementor-widget-container">
+                              
                                         <div
                                             class="qodef-shortcode qodef-m  qodef-qi-image-gallery-masonry qodef-qi-fslightbox-popup qodef-popup-gallery qodef-image--hover-zoom qodef-image--hover-from-top qodef-qi-grid qodef-layout--qi-masonry qodef-items--fixed qodef-col-num--3   qodef-responsive--predefined">
                                             <div class="qodef-grid-inner">
@@ -841,9 +745,8 @@
                                                                 class="attachment- size-" alt="" decoding="async"
                                                                 loading="lazy"
                                                                 srcset="{{ asset($slide['img1']) }} 1920w,{{ asset($slide['img1']) }} 300w, {{ asset($slide['img1']) }} 1024w,{{ asset($slide['img1']) }} 768w, 
-			{{ asset($slide['img1']) }} 1107w,{{ asset($slide['img1']) }} 1060w,{{ asset($slide['img1']) }} 1536w,
-			{{ asset($slide['img1']) }} 550w,{{ asset($slide['img1']) }} 1006w"
-                                                                sizes="(max-width: 1920px) 100vw, 1920px" /></a>
+                                                                {{ asset($slide['img1']) }} 1107w,{{ asset($slide['img1']) }} 1060w,{{ asset($slide['img1']) }} 1536w,
+                                                                {{ asset($slide['img1']) }} 550w,{{ asset($slide['img1']) }} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
                                                     </div>
                                                 </div>
                                                 <div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
@@ -856,9 +759,8 @@
                                                                 class="attachment- size-" alt="" decoding="async"
                                                                 loading="lazy"
                                                                 srcset="{{ asset($slide['img2']) }} 1920w,{{ asset($slide['img2']) }} 300w, {{ asset($slide['img2']) }} 1024w,{{ asset($slide['img2']) }} 768w, 
-			{{ asset($slide['img2']) }} 1107w,{{ asset($slide['img2']) }} 1060w,{{ asset($slide['img2']) }} 1536w,
-			{{ asset($slide['img2']) }} 550w,{{ asset($slide['img2']) }} 1006w"
-                                                                sizes="(max-width: 1920px) 100vw, 1920px" /></a>
+                                                                {{ asset($slide['img2']) }} 1107w,{{ asset($slide['img2']) }} 1060w,{{ asset($slide['img2']) }} 1536w,
+                                                                {{ asset($slide['img2']) }} 550w,{{ asset($slide['img2']) }} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
                                                     </div>
                                                 </div>
                                                 <div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
@@ -871,9 +773,8 @@
                                                                 class="attachment- size-" alt="" decoding="async"
                                                                 loading="lazy"
                                                                 srcset="{{ asset($slide['img3']) }} 1920w,{{ asset($slide['img3']) }} 300w, {{ asset($slide['img3']) }} 1024w,{{ asset($slide['img3']) }} 768w, 
-			{{ asset($slide['img3']) }} 1107w,{{ asset($slide['img3']) }} 1060w,{{ asset($slide['img3']) }} 1536w,
-			{{ asset($slide['img3']) }} 550w,{{ asset($slide['img3']) }} 1006w"
-                                                                sizes="(max-width: 1920px) 100vw, 1920px" /></a>
+                                                                {{ asset($slide['img3']) }} 1107w,{{ asset($slide['img3']) }} 1060w,{{ asset($slide['img3']) }} 1536w,
+                                                                {{ asset($slide['img3']) }} 550w,{{ asset($slide['img3']) }} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
                                                     </div>
                                                 </div>
                                                 <div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
@@ -886,9 +787,8 @@
                                                                 class="attachment- size-" alt="" decoding="async"
                                                                 loading="lazy"
                                                                 srcset="{{ asset($slide['img4']) }} 1920w,{{ asset($slide['img4']) }} 300w, {{ asset($slide['img4']) }} 1024w,{{ asset($slide['img4']) }} 768w, 
-			{{ asset($slide['img4']) }} 1107w,{{ asset($slide['img4']) }} 1060w,{{ asset($slide['img4']) }} 1536w,
-			{{ asset($slide['img4']) }} 550w,{{ asset($slide['img4']) }} 1006w"
-                                                                sizes="(max-width: 1920px) 100vw, 1920px" /></a>
+                                                                {{ asset($slide['img4']) }} 1107w,{{ asset($slide['img4']) }} 1060w,{{ asset($slide['img4']) }} 1536w,
+                                                                {{ asset($slide['img4']) }} 550w,{{ asset($slide['img4']) }} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
                                                     </div>
                                                 </div>
                                                 <div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
@@ -901,9 +801,8 @@
                                                                 class="attachment- size-" alt="" decoding="async"
                                                                 loading="lazy"
                                                                 srcset="{{ asset($slide['img5']) }} 1920w,{{ asset($slide['img5']) }} 300w, {{ asset($slide['img5']) }} 1024w,{{ asset($slide['img5']) }} 768w, 
-			{{ asset($slide['img5']) }} 1107w,{{ asset($slide['img5']) }} 1060w,{{ asset($slide['img5']) }} 1536w,
-			{{ asset($slide['img5']) }} 550w,{{ asset($slide['img5']) }} 1006w"
-                                                                sizes="(max-width: 1920px) 100vw, 1920px" /></a>
+                                                                {{ asset($slide['img5']) }} 1107w,{{ asset($slide['img5']) }} 1060w,{{ asset($slide['img5']) }} 1536w,
+                                                                {{ asset($slide['img5']) }} 550w,{{ asset($slide['img5']) }} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
                                                     </div>
                                                 </div>
                                                 <div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
@@ -916,9 +815,8 @@
                                                                 class="attachment- size-" alt="" decoding="async"
                                                                 loading="lazy"
                                                                 srcset="{{ asset($slide['img6']) }} 1920w,{{ asset($slide['img6']) }} 300w, {{ asset($slide['img6']) }} 1024w,{{ asset($slide['img6']) }} 768w, 
-			{{ asset($slide['img6']) }} 1107w,{{ asset($slide['img6']) }} 1060w,{{ asset($slide['img6']) }} 1536w,
-			{{ asset($slide['img6']) }} 550w,{{ asset($slide['img6']) }} 1006w"
-                                                                sizes="(max-width: 1920px) 100vw, 1920px" /></a>
+                                                                {{ asset($slide['img6']) }} 1107w,{{ asset($slide['img6']) }} 1060w,{{ asset($slide['img6']) }} 1536w,
+                                                                {{ asset($slide['img6']) }} 550w,{{ asset($slide['img6']) }} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1024,18 +922,18 @@
                                                                 {{ $slide['name'] }} </h4>
                                                             <p class="qodef-m-role">{{ $slide['position'] }}</p>
                                                             <div class="qodef-m-social-icons">
-                                                                <a class="qodef-e-social-icon-link" itemprop="url"
+                                                                {{-- <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['facebook'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">
                                                                         <i aria-hidden="true"
                                                                             class="fab fa-facebook-f"></i> </span>
-                                                                </a>
-                                                                <a class="qodef-e-social-icon-link" itemprop="url"
+                                                                </a> --}}
+                                                                {{-- <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['twitter'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">
                                                                         <i aria-hidden="true" class="fab fa-twitter"></i>
                                                                     </span>
-                                                                </a>
+                                                                </a> --}}
                                                                 <a class="qodef-e-social-icon-link" itemprop="url"
                                                                     href="{{ $slide['insta'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">

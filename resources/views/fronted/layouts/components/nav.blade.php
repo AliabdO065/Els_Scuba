@@ -18,7 +18,7 @@
                     <a href="{{ route('fronted.projects') }}">Participants</a>
                 </li>
                 <li class="menu-item {{ request()->routeIs('fronted.news*') ? 'current-menu-item' : '' }}">
-                    <a href="{{ route('fronted.news') }}">News</a>
+                    <a href="{{ route('fronted.news') }}">Highlights</a>
                 </li>
                 <li class="menu-item {{ request()->routeIs('fronted.contact') ? 'current-menu-item' : '' }}">
                     <a href="{{ route('fronted.contact') }}">Contact</a>

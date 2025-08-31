@@ -67,9 +67,9 @@
                     <li class="menu-item">
                       <a href="{{route('dashboard.about.main')}}" class="menu-link">About Us</a>
                     </li>
-                    <li class="menu-item">
+                    {{-- <li class="menu-item">
                       <a href="{{route('dashboard.about.history')}}" class="menu-link">History</a>
-                    </li>
+                    </li> --}}
                     <li class="menu-item">
                       <a href="{{route('dashboard.about.services')}}" class="menu-link">Services</a>
                     </li>
@@ -92,25 +92,25 @@
                 </li><!-- /.menu-item -->
                 <!-- .menu-item -->
                 <li class="menu-item has-child">
-                  <a href="#" class="menu-link"><span class="menu-icon oi oi-fork"></span> <span class="menu-text">Projects</span></a> <!-- child menu -->
+                  <a href="#" class="menu-link"><span class="menu-icon oi oi-fork"></span> <span class="menu-text">Participants</span></a> <!-- child menu -->
                   <ul class="menu">
                     <li class="menu-item">
-                      <a href="{{route('dashboard.projects')}}" class="menu-link">All Projects</a>
+                      <a href="{{route('dashboard.projects')}}" class="menu-link">All Participants</a>
                     </li>
                     <li class="menu-item">
-                      <a href="{{route('dashboard.projects.add')}}" class="menu-link">Add Project </a>
+                      <a href="{{route('dashboard.projects.add')}}" class="menu-link">Add Participant </a>
                     </li>
                   </ul><!-- /child menu -->
                 </li><!-- /.menu-item -->
                 <!-- .menu-item -->
                 <li class="menu-item has-child">
-                  <a href="#" class="menu-link"><span class="menu-icon fa fa-newspaper"></span> <span class="menu-text">News</span></a> <!-- child menu -->
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-newspaper"></span> <span class="menu-text">Highlights</span></a> <!-- child menu -->
                   <ul class="menu">
                     <li class="menu-item">
-                      <a href="{{route('dashboard.news')}}" class="menu-link"> All News</a>
+                      <a href="{{route('dashboard.news')}}" class="menu-link"> All</a>
                     </li>
                     <li class="menu-item">
-                      <a href="{{route('dashboard.news.add')}}" class="menu-link">Add News</a>
+                      <a href="{{route('dashboard.news.add')}}" class="menu-link">Add One</a>
                     </li>
                     <li class="menu-item">
                       <a href="{{route('dashboard.news.allcomments')}}" class="menu-link">Comments</a>

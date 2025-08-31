@@ -36,7 +36,7 @@
                   <div class="col ml-6 bord">
                     <!-- .metric -->
                     <a href="{{route('dashboard.projects')}}" class="metric metric-bordered align-items-center">
-                      <h2 class="metric-label"> Projects </h2>
+                      <h2 class="metric-label"> Participants </h2>
                       <p class="metric-value h3">
                         <sub><i class="oi oi-fork"></i></sub> <span class="value">{{count($projects)}} </span>
                       </p>
