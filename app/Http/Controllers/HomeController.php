@@ -321,21 +321,33 @@ class HomeController extends Controller
         $request->validate([
             'title' => ['required', new DisallowedWords],
             'details' => ['required', new DisallowedWords],
-            'icon' => ['required', new DisallowedWords],
+            'img' => ['required'],
             'status' => ['required', new DisallowedWords],
         ]);
         $contentAsString = $this->getContent(4);
         $content = explode("#xt#",$contentAsString);
+
         if (!empty($content[0]))
-            $str = '#xt#'.'title=#='.$request->title.'#x#'.'details=#='.$request->details.'#x#'.'icon=#='.$request->icon.'#x#'.'status=#='.$request->status;
+            $str = '#xt#'.'title=#='.$request->title.'#x#'.'details=#='.$request->details.'#x#'.'status=#='.$request->status;
         else 
-            $str ='title=#='.$request->title.'#x#'.'details=#='.$request->details.'#x#'.'icon=#='.$request->icon.'#x#'.'status=#='.$request->status;
+            $str ='title=#='.$request->title.'#x#'.'details=#='.$request->details.'#x#'.'status=#='.$request->status;
         
+        if ($request->file('img')) {
+            $file = $request->file('img');
+            $filename = Str::uuid() . $file->getClientOriginalName();
+            $file->move(public_path('images/home/certificate'), $filename);
+            $path = 'images\home\certificate\\' . $filename;
+            $str.='#x#'.'img=#='.$path;
+        }
+        $newcontent = $contentAsString . $str;
+
         $newcontent = $contentAsString . $str;
         $slidesarr['content'] = $newcontent;
         Home::find(4)->update(['content' => $newcontent] );
         return redirect()->route('dashboard.category');
     }
+ 
+
 ////
     public function editcategory($id)
     {
@@ -351,9 +363,9 @@ class HomeController extends Controller
             $slide[$key] = $value;
         }
         if($id>0)
-            $old= '#xt#'.'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'icon=#='.$slide['icon'].'#x#'.'status=#='.$slide['status'];
+            $old= '#xt#'.'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'status=#='.$slide['status'].'#x#'.'img=#='.$slide['img'];
         else
-            $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'icon=#='.$slide['icon'].'#x#'.'status=#='.$slide['status'];
+            $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'status=#='.$slide['status'].'#x#'.'img=#='.$slide['img'];
 
         return view('dashboard.home.category.edit' , compact('slide','old'));
     }
@@ -371,23 +383,31 @@ class HomeController extends Controller
         $str = '#xt#'.'title=#='.$request->title.'#x#'.'details=#='.$request->details;
         else
         $str ='title=#='.$request->title.'#x#'.'details=#='.$request->details;
-        
-        if ($request->icon) {
-            $str.='#x#'.'icon=#='.$request->icon;
-        }else{
-            $slide = [];
-            $pairs = explode('#x#', $old);
-            foreach ($pairs as $pair) {
-                list($key, $value) = explode('=#=', $pair);
-                $slide[$key] = $value;
+
+         if ($request->file('img')) {
+            $file = $request->file('img');
+            $filename = Str::uuid() . $file->getClientOriginalName();
+            $file->move(public_path('images/home/certificate'), $filename);
+            $path = 'images\home\certificate\\' . $filename;
+            $str.='#x#'.'img=#='.$path;
+
+            $filePath = public_path($request->image); 
+            if (File::exists($filePath)) {
+                File::delete($filePath);
             }
-            $str.='#x#'.'icon=#='.$slide['icon'];
+        }else{
+            $str.='#x#'.'img=#='.$request->image;
         }
+
         $str.='#x#'.'status=#='.$request->status;
         $newcontent = str_replace($old, $str, $allcontent);
         Home::find(4)->update(['content' => $newcontent] );
         return redirect()->route('dashboard.category');
     }
+
+
+
+
 ////
     public function deletecategory($id)
     {
@@ -403,14 +423,18 @@ class HomeController extends Controller
         }
 
         if($id>0)
-        $old= '#xt#'.'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'icon=#='.$slide['icon'].'#x#'.'status=#='.$slide['status'];
+        $old= '#xt#'.'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'img=#='.$slide['img'].'#x#'.'status=#='.$slide['status'];
         else if(isset($content[1]))
-        $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'icon=#='.$slide['icon'].'#x#'.'status=#='.$slide['status'].'#xt#';
+        $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'img=#='.$slide['img'].'#x#'.'status=#='.$slide['status'].'#xt#';
         else
-        $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'icon=#='.$slide['icon'].'#x#'.'status=#='.$slide['status'];
+        $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'img=#='.$slide['img'].'#x#'.'status=#='.$slide['status'];
         $newcontent = str_replace($old,'' ,$allcontent);
         Home::find(4)->update(['content' => $newcontent]);
-        
+
+        $filePath = public_path($slide['img']); 
+        if (File::exists($filePath)) {
+            File::delete($filePath);
+        }
         return redirect()->route('dashboard.category');
 
     }

@@ -23,7 +23,7 @@
                 <li class="menu-item {{ request()->routeIs('fronted.contact') ? 'current-menu-item' : '' }}">
                     <a href="{{ route('fronted.contact') }}">Contact</a>
                 </li>
-            </ul>
+            </ul> 
         </div>
         
         {{-- <a class="search-toggle toggle-link"></a> --}}

@@ -967,7 +967,7 @@
                         </div>
                     </div>
                 </section>
-                {{-- <section
+                <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-5962a50 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                     data-id="5962a50" data-element_type="section"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -987,21 +987,21 @@
 
 
                                                  <?php
-                                               // $counter = 1;
+                                               $counter = 1;
                                                 ?>
                                                 @if (!empty($category[0]))
                                                     @foreach ($category as $i => $slides)
                                                          <?php
-                                                    // $string = $slides;
-                                                    //  $pairs = explode('#x#', $string);
-                                                    //  $slide = [];
-                                                    // foreach ($pairs as $pair) {
-                                                    //     [$key, $value] = explode('=#=', $pair);
-                                                    //     $slide[$key] = $value;
-                                                    // }
-                                                    // if ($slide['status'] == 'disappear') {
-                                                    //     continue;
-                                                    // }
+                                                    $string = $slides;
+                                                     $pairs = explode('#x#', $string);
+                                                     $slide = [];
+                                                    foreach ($pairs as $pair) {
+                                                        [$key, $value] = explode('=#=', $pair);
+                                                        $slide[$key] = $value;
+                                                    }
+                                                    if ($slide['status'] == 'disappear') {
+                                                        continue;
+                                                    }
                                                       ?>
 
                                                         <div
@@ -1011,8 +1011,16 @@
                                                                     <div class="qodef-e-icon-holder">
                                                                         <div class="qodef-e-icon">
                                                                             <span class="qodef-e-item-icon-text">
-                                                                                <i aria-hidden="true"
-                                                                                    class="{{ $slide['icon'] }}"></i>
+                                                        <div class="qodef-m-image">
+                                                            <div class="qodef-m-media-image">
+                                                                <img width="800" height="889"
+                                                                    src="{{ asset($slide['img']) }}"
+                                                                    class="attachment-full size-full" alt=""
+                                                                    decoding="async" loading="lazy"
+                                                                    srcset="{{ asset($slide['img']) }} 800w, {{ asset($slide['img']) }} 270w, {{ asset($slide['img']) }} 768w, {{ asset($slide['img']) }} 495w, {{ asset($slide['img']) }} 550w, {{ asset($slide['img']) }} 450w"
+                                                                    sizes="(max-width: 800px) 100vw, 800px" />
+                                                            </div>
+                                                        </div>
                                                                             </span>
                                                                             <div class="qodef-e-number">
                                                                                 {{ $counter++ }} </div>
@@ -1038,7 +1046,7 @@
                             </div>
                         </div>
                     </div>
-                </section> --}}
+                </section>
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-354be38f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                     data-id="354be38f" data-element_type="section">
@@ -1189,7 +1197,7 @@
                                     <div class="elementor-widget-container">
                                         <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--textual    qodef-icon--right qodef-hover--icon-move-horizontal-short   qodef-text-underline qodef-underline--left "
                                             href="{{ route('fronted.projects') }}" target="_self">
-                                            <span class="qodef-m-text">Latest Projects</span>
+                                            <span class="qodef-m-text">All Participants</span>
                                             <span class="qodef-m-icon qodef--icon-color-set">
                                                 <span class="qodef-m-icon-inner">
                                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="7px"
@@ -1421,7 +1429,7 @@
                                     <div class="elementor-widget-container">
                                         <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--textual    qodef-icon--right qodef-hover--icon-move-horizontal-short   qodef-text-underline qodef-underline--left "
                                             href="{{ route('fronted.news') }}" target="_self">
-                                            <span class="qodef-m-text">Latest News</span>
+                                            <span class="qodef-m-text">Latest Highlights</span>
                                             <span class="qodef-m-icon qodef--icon-color-set">
                                                 <span class="qodef-m-icon-inner">
                                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"

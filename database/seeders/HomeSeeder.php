@@ -30,7 +30,7 @@ class HomeSeeder extends Seeder
             ],
             [
                 'name' => 'categories' ,
-                'email' =>"title=#=Initial Consultation#x#details=#=The process begins with an initial consultation where the solar energy company engages with the client to understand their energy needs, goals, and site-specific requirements.#x#icon=#=fas fa-globe-africa#x#status=#=appear#xt#title=#=Site Assessment and Feasibility Study#x#details=#=he solar energy company conducts a detailed site assessment to determine the feasibility of a solar energy system. and structural considerations#x#icon=#=fab fa-artstation#x#status=#=appear#xt#title=#=Customized System Design#x#details=#=Based on the assessment and feasibility study, the solar energy company designs a customized solar system that meets the client's specific requirements.#x#icon=#=fab fa-digital-ocean#x#status=#=appear#xt#title=#=Proposal and Contracting#x#details=#=The solar energy company provides a comprehensive proposal outlining the system design, projected energy savings, financial analysis, and cost estimates#x#icon=#=fab fa-creative-commons-sa#x#status=#=appear",
+                'email' =>"title=#=Initial Consultation#x#details=#=The process begins with an initial consultation where the solar energy company engages with the client to understand their energy needs, goals, and site-specific requirements.#x#img=#=fas fa-globe-africa#x#status=#=appear#xt#title=#=Site Assessment and Feasibility Study#x#details=#=he solar energy company conducts a detailed site assessment to determine the feasibility of a solar energy system. and structural considerations#x#img=#=fab fa-artstation#x#status=#=appear#xt#title=#=Customized System Design#x#details=#=Based on the assessment and feasibility study, the solar energy company designs a customized solar system that meets the client's specific requirements.#x#img=#=fab fa-digital-ocean#x#status=#=appear#xt#title=#=Proposal and Contracting#x#details=#=The solar energy company provides a comprehensive proposal outlining the system design, projected energy savings, financial analysis, and cost estimates#x#img=#=fab fa-creative-commons-sa#x#status=#=appear",
             ],
             [
                 'name' => 'images' ,
@@ -101,7 +101,6 @@ class HomeSeeder extends Seeder
                 'content' => '',
             ],
         ]);
-
         
         DB::table('sections_contact')->insert([
             [

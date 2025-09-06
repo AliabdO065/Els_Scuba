@@ -40,9 +40,9 @@
                     <li class="menu-item">
                       <a href="{{route('dashboard.about')}}" class="menu-link">About</a>
                     </li>
-                    {{-- <li class="menu-item">
+                    <li class="menu-item">
                       <a href="{{route('dashboard.category')}}" class="menu-link">Categories</a>
-                    </li> --}}
+                    </li>
                     <li class="menu-item">
                       <a href="{{route('dashboard.images.home')}}" class="menu-link">Images</a>
                     </li>

@@ -5,7 +5,7 @@
     <div class="page">
         <!-- .page-inner -->
         <div class="page-inner">
-            <a href="{{route('dashboard.category.add')}}" type="button" class="btn btn-success">Add Category</a> <hr>
+            <a href="{{route('dashboard.category.add')}}" type="button" class="btn btn-success">Add Certificate</a> <hr>
             <div style="display: flex;flex-wrap: wrap;justify-content: space-between;">
                 @if (!empty($content[0]))
                 <?php// print_r($content);  die; ?>
@@ -20,7 +20,8 @@
                                 }
                         ?>
                         <div class="card" style="width: calc(50% - 50px);display: flex;">
-                            <i style="font-size: 70px;margin-left:70%;margin-top:7%;" class="{{$slide['icon']}}" aria-hidden="true"></i>
+                            <img src="{{asset($slide['img'])}}" class="card-img-top" style="height: 170px;width:50%;float:right;position: inherit;
+                            left:40%;top:4%;" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{$slide['title']}}</h5>
                                 <p class="card-text">{{$slide['details']}}</p>
