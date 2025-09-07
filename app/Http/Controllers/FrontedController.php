@@ -83,7 +83,9 @@ class FrontedController extends Controller
         $masters = $this->getContent(7, Home::class);
         $contact = $this->getit(8 ,Home::class);
         $footer = $this->getContent(9, Home::class);
-        return view('fronted.services',compact('main','services','masters','contact','footer'));
+        $category = $this->getContent(4, Home::class);
+
+        return view('fronted.services',compact('main','services','category','masters','contact','footer'));
     }
     public function projects(){
         $content = $this->getContent(1, Projects::class);

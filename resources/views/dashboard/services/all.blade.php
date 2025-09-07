@@ -28,15 +28,15 @@
                                 }
                         ?>
                         <div class="card" style="width: calc(50% - 50px);display: flex;">
-                            <p class="card-tex mt-2" style="color: yellow;font-size:20px">{{$slide['header']}} </p>
+                            <p class="card-tex mt-2" style="color: #346cb0;font-size:20px">{{$slide['header']}} </p>
                             <p class="card-text">{{$slide['status']}} </p>
                             <img src="{{asset($slide['img'])}}" class="card-img-top" style="height: 270px" alt="...">
                             <div class="card-body over_flow">
-                                <h5 class="card-title" style="color: yellow">{{$slide['title1']}}</h5>
+                                <h5 class="card-title" style="color: #346cb0">{{$slide['title1']}}</h5>
                                 <p class="card-text over_flow" style="width: max-content;">{{$slide['contenttitle1']}}</p>
-                                <h5 class="card-title" style="color: yellow">{{$slide['title2']}}</h5>
+                                <h5 class="card-title" style="color: #346cb0">{{$slide['title2']}}</h5>
                                 <p class="card-text over_flow" style="width: max-content;">{{$slide['contenttitle2']}}</p>
-                                <h5 class="card-title"style="color: yellow">{{$slide['title3']}}</h5>
+                                <h5 class="card-title"style="color: #346cb0">{{$slide['title3']}}</h5>
                                 <p class="card-text over_flow" style="width: max-content;">{{$slide['contenttitle3']}}</p>
                                 <a href="{{route('dashboard.services.edit',  $i )}}" class="btn btn-primary">Edit</a>
                                 <a href="{{route('dashboard.services.delete',  $i )}}"   class="btn btn-danger delete-confirm">Delete</a>

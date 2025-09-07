@@ -57,7 +57,7 @@ class HomeController extends Controller
     }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    ////////////////////// slider secthion
+    ////////////////////// slider secthion 
     
     public function slides()
     {
@@ -302,7 +302,7 @@ class HomeController extends Controller
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //////////////////////Category secthion
+    //////////////////////Category secthion 
 
     public function category()
     {
@@ -339,8 +339,6 @@ class HomeController extends Controller
             $path = 'images\home\certificate\\' . $filename;
             $str.='#x#'.'img=#='.$path;
         }
-        $newcontent = $contentAsString . $str;
-
         $newcontent = $contentAsString . $str;
         $slidesarr['content'] = $newcontent;
         Home::find(4)->update(['content' => $newcontent] );
@@ -380,9 +378,9 @@ class HomeController extends Controller
         ]);
         $allcontent = $this->getContent(4);
         if($old[0]=='#'&& $old[2]=='t')
-        $str = '#xt#'.'title=#='.$request->title.'#x#'.'details=#='.$request->details;
+        $str = '#xt#'.'title=#='.$request->title.'#x#'.'details=#='.$request->details.'#x#'.'status=#='.$request->status;
         else
-        $str ='title=#='.$request->title.'#x#'.'details=#='.$request->details;
+        $str ='title=#='.$request->title.'#x#'.'details=#='.$request->details.'#x#'.'status=#='.$request->status;
 
          if ($request->file('img')) {
             $file = $request->file('img');
@@ -406,8 +404,7 @@ class HomeController extends Controller
     }
 
 
-
-
+ 
 ////
     public function deletecategory($id)
     {
@@ -423,11 +420,11 @@ class HomeController extends Controller
         }
 
         if($id>0)
-        $old= '#xt#'.'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'img=#='.$slide['img'].'#x#'.'status=#='.$slide['status'];
+        $old= '#xt#'.'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'status=#='.$slide['status'].'#x#'.'img=#='.$slide['img'];
         else if(isset($content[1]))
-        $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'img=#='.$slide['img'].'#x#'.'status=#='.$slide['status'].'#xt#';
+        $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'status=#='.$slide['status'].'#x#'.'img=#='.$slide['img'].'#xt#';
         else
-        $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'img=#='.$slide['img'].'#x#'.'status=#='.$slide['status'];
+        $old= 'title=#='.$slide['title'].'#x#'.'details=#='.$slide['details'].'#x#'.'status=#='.$slide['status'].'#x#'.'img=#='.$slide['img'];
         $newcontent = str_replace($old,'' ,$allcontent);
         Home::find(4)->update(['content' => $newcontent]);
 
@@ -574,7 +571,7 @@ class HomeController extends Controller
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    ////////////////////// Master secthion
+    ////////////////////// Master secthion   
     public function masters()
     {
         $contentAsString = $this->getContent(7);
@@ -740,7 +737,7 @@ class HomeController extends Controller
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    ////////////////////// footer secthion
+    ////////////////////// footer secthion    
 
     public function footer()
     {

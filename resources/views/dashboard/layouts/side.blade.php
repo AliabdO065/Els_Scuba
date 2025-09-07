@@ -41,7 +41,7 @@
                       <a href="{{route('dashboard.about')}}" class="menu-link">About</a>
                     </li>
                     <li class="menu-item">
-                      <a href="{{route('dashboard.category')}}" class="menu-link">Categories</a>
+                      <a href="{{route('dashboard.category')}}" class="menu-link">Certificates</a>
                     </li>
                     <li class="menu-item">
                       <a href="{{route('dashboard.images.home')}}" class="menu-link">Images</a>

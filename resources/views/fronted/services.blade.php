@@ -416,6 +416,7 @@
                         </div>
                     </div>
                 </section>
+
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-3feb1420 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="3feb1420" data-element_type="section">
@@ -495,9 +496,6 @@
 
                     </div>
                 </section>
-
-
-
 
                  @if (!empty($services[0]))
                     @for ($i = 0; $i < count($services); $i++)
@@ -787,220 +785,56 @@
                             </div>
                         </section>
 						<hr>
-
-
-
-                            {{-- <section
-                                class="elementor-section elementor-top-section elementor-element elementor-element-1cbb8f14 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                data-id="1cbb8f14" data-element_type="section" >
-                                <div class="elementor-container elementor-column-gap-default">
-                                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-39a2e09f"
-                                        data-id="39a2e09f" data-element_type="column">
-                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                            <div class="elementor-element elementor-element-332fc016 elementor-widget elementor-widget-heading"
-                                                data-id="332fc016" data-element_type="widget"
-                                                data-widget_type="heading.default">
-                                                <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default">
-                                                        {{ $slide['header'] }}</h2>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-element elementor-element-72224467 elementor-invisible elementor-widget elementor-widget-qi_addons_for_elementor_accordion"
-                                                data-id="72224467" data-element_type="widget"
-                                                data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                                                data-widget_type="qi_addons_for_elementor_accordion.default">
-                                                <div class="elementor-widget-container">
-                                                    <div
-                                                        class="qodef-shortcode qodef-m  qodef-qi-accordion qodef-qi-clear qodef-behavior--accordion qodef-layout--simple qodef-style--border-between qodef-height--content" >
-                                                        <h3 class="qodef-e-title-holder">
-                                                            <span class="qodef-e-title">{{ $slide['title1'] }}</span>
-                                                            <span class="qodef-e-mark">
-                                                                <span class="qodef-icon--plus">
-                                                                    <span class="qodef-e-icon">
-                                                                        <i aria-hidden="true" class="fas fa-plus"></i> </span>
-                                                                </span>
-                                                                <span class="qodef-icon--minus">
-                                                                    <span class="qodef-e-icon">
-                                                                        <i aria-hidden="true" class="fas fa-minus"></i>
-                                                                    </span>
-                                                                </span>
-                                                            </span>
-                                                        </h3>
-                                                        <div class="qodef-e-content">
-                                                            <div class="qodef-e-content-inner">
-                                                                <p>{{ $slide['contenttitle1'] }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="qodef-e-title-holder">
-                                                            <span class="qodef-e-title">{{ $slide['title2'] }}</span>
-                                                            <span class="qodef-e-mark">
-                                                                <span class="qodef-icon--plus">
-                                                                    <span class="qodef-e-icon">
-                                                                        <i aria-hidden="true" class="fas fa-plus"></i> </span>
-                                                                </span>
-                                                                <span class="qodef-icon--minus">
-                                                                    <span class="qodef-e-icon">
-                                                                        <i aria-hidden="true" class="fas fa-minus"></i>
-                                                                    </span>
-                                                                </span>
-                                                            </span>
-                                                        </h3>
-                                                        <div class="qodef-e-content">
-                                                            <div class="qodef-e-content-inner">
-                                                                <p>{{ $slide['contenttitle2'] }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="qodef-e-title-holder">
-                                                            <span class="qodef-e-title">{{ $slide['title3'] }}</span>
-                                                            <span class="qodef-e-mark">
-                                                                <span class="qodef-icon--plus">
-                                                                    <span class="qodef-e-icon">
-                                                                        <i aria-hidden="true" class="fas fa-plus"></i> </span>
-                                                                </span>
-                                                                <span class="qodef-icon--minus">
-                                                                    <span class="qodef-e-icon">
-                                                                        <i aria-hidden="true" class="fas fa-minus"></i>
-                                                                    </span>
-                                                                </span>
-                                                            </span>
-                                                        </h3>
-                                                        <div class="qodef-e-content">
-                                                            <div class="qodef-e-content-inner">
-                                                                <p>{{ $slide['contenttitle3'] }}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5353353f"
-                                        data-id="5353353f" data-element_type="column">
-                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                            <div class="elementor-element elementor-element-1ced4aed animated-slow elementor-invisible elementor-widget elementor-widget-qi_addons_for_elementor_parallax_images"
-                                                data-id="1ced4aed" data-element_type="widget"
-                                                data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                                                data-widget_type="qi_addons_for_elementor_parallax_images.default">
-                                                <div class="elementor-widget-container">
-                                                    <div
-                                                        class="qodef-shortcode qodef-m  qodef-qi-parallax-images qodef-layout--default">
-                                                        <div class="qodef-m-images">
-                                                            <div class="qodef-e-main-image-holder">
-                                                                <div class="qodef-e-main-image-zoom-holder">
-                                                                    <div class="qodef-e-main-image" data-parallax-main="250">
-                                                                        <img width="1300" height="1280"
-                                                                            src="{{ asset($slide['img']) }}"
-                                                                            class="attachment-qi_addons_for_elementor_image_size_huge-square size-qi_addons_for_elementor_image_size_huge-square"
-                                                                            alt="" decoding="async" loading="lazy" />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="qodef-e-parallax-image qodef-position--bottom-left elementor-repeater-item-93b473e">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section> --}}
-
-
-
                         @endisset
                     @endfor
                 @endif
 
 
-
-
-
-
-
+ 
                 <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-5402a2bc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="5402a2bc" data-element_type="section">
+                    class="elementor-section elementor-top-section elementor-element elementor-element-5962a50 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                    data-id="5962a50" data-element_type="section"
+                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-background-overlay"></div>
                     <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c21f09b"
-                            data-id="c21f09b" data-element_type="column">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6b1d04e8"
+                            data-id="6b1d04e8" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-425f3a02 elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
-                                    data-id="425f3a02" data-element_type="widget"
-                                    data-widget_type="qi_addons_for_elementor_animated_text.default">
+                                <div class="elementor-element elementor-element-6f449497 elementor-widget elementor-widget-qi_addons_for_elementor_process"
+                                    data-id="6f449497" data-element_type="widget"
+                                    data-widget_type="qi_addons_for_elementor_process.default">
                                     <div class="elementor-widget-container">
                                         <div
-                                            class="qodef-shortcode qodef-m  qodef-qi-animated-text qodef--animated-by-letter qodef--alignment-left qodef-qi--has-appear qodef--appear-from-right">
-                                            <h1 class="qodef-m-title">
+                                            class="qodef-shortcode qodef-m  qodef-qi-process  qodef-qi--has-appear qodef-qi-grid qodef-layout--qi-columns  qodef-col-num--4  qodef-item-layout--horizontal qodef-responsive--predefined">
+                                            <div class="qodef-grid-inner">
 
-                                                <?php
-                                                $string = $masters[0];
-                                                $pairs = explode('#x#', $string);
-                                                $slide = [];
-                                                foreach ($pairs as $pair) {
-                                                    [$key, $value] = explode('=#=', $pair);
-                                                    $slide[$key] = $value;
-                                                }
-                                                $header = explode(' ', $slide['header']);
+
+
+                                                 <?php
+                                               $counter = 1;
                                                 ?>
-                                                @foreach ($header as $item)
-                                                    <span class="qodef-e-word-holder">{{ $item }}</span>
-                                                @endforeach
-                                            </h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-5e708c18 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-                                    data-id="5e708c18" data-element_type="widget"
-                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                                    data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">
-                                            {{ $slide['wordheader'] }} </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-5a566b2c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="5a566b2c" data-element_type="section"
-                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-container elementor-column-gap-default"  style="justify-content: center">
+                                                @if (!empty($category[0]))
+                                                    @foreach ($category as $i => $slides)
+                                                         <?php
+                                                    $string = $slides;
+                                                     $pairs = explode('#x#', $string);
+                                                     $slide = [];
+                                                    foreach ($pairs as $pair) {
+                                                        [$key, $value] = explode('=#=', $pair);
+                                                        $slide[$key] = $value;
+                                                    }
+                                                    if ($slide['status'] == 'disappear') {
+                                                        continue;
+                                                    }
+                                                      ?>
 
-                        @if (!empty($masters[1]))
-                            @foreach ($masters as $i => $slides)
-                                <?php
-                                if ($i == 0) {
-                                    continue;
-                                }
-                                $string = $slides;
-                                $pairs = explode('#x#', $string);
-                                $slide = [];
-                                foreach ($pairs as $pair) {
-                                    [$key, $value] = explode('=#=', $pair);
-                                    $slide[$key] = $value;
-                                }
-                                if ($slide['status'] == 'disappear') {
-                                    continue;
-                                }
-                                ?>
-
-                                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7a6d2cec"
-                                    data-id="7a6d2cec" data-element_type="column"
-                                    data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-4bd0cdcd animated-slow elementor-invisible elementor-widget elementor-widget-qi_addons_for_elementor_team_member"
-                                            data-id="4bd0cdcd" data-element_type="widget"
-                                            data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}"
-                                            data-widget_type="qi_addons_for_elementor_team_member.default">
-                                            <div class="elementor-widget-container">
-                                                <div
-                                                    class="qodef-shortcode qodef-m  qodef-qi-team-member qodef-item-layout--info-from-bottom qodef-image--hover-scale">
-                                                    <div class="qodef-m-inner">
+                                                        <div
+                                                            class="qodef-e qodef-process-item qodef-grid-item elementor-repeater-item-e90ae08">
+                                                            <div class="qodef-e-inner">
+                                                                <div class="qodef-e-content">
+                                                                    <div class="qodef-e-icon-holder">
+                                                                        <div class="qodef-e-icon">
+                                                                            <span class="qodef-e-item-icon-text">
                                                         <div class="qodef-m-image">
                                                             <div class="qodef-m-media-image">
                                                                 <img width="800" height="889"
@@ -1011,47 +845,33 @@
                                                                     sizes="(max-width: 800px) 100vw, 800px" />
                                                             </div>
                                                         </div>
-                                                        <div class="qodef-m-content">
-                                                            <h4 itemprop="name" class="qodef-m-title">
-                                                                {{ $slide['name'] }} </h4>
-                                                            <p class="qodef-m-role">{{ $slide['position'] }}</p>
-                                                            <div class="qodef-m-social-icons">
-                                                                {{-- <a class="qodef-e-social-icon-link" itemprop="url"
-                                                                    href="{{ $slide['facebook'] }}" target="_blank">
-                                                                    <span class="qodef-e-social-icon">
-                                                                        <i aria-hidden="true"
-                                                                            class="fab fa-facebook-f"></i> </span>
-                                                                </a> --}}
-                                                                {{-- <a class="qodef-e-social-icon-link" itemprop="url"
-                                                                    href="{{ $slide['twitter'] }}" target="_blank">
-                                                                    <span class="qodef-e-social-icon">
-                                                                        <i aria-hidden="true" class="fab fa-twitter"></i>
-                                                                    </span>
-                                                                </a> --}}
-                                                                <a class="qodef-e-social-icon-link" itemprop="url"
-                                                                    href="{{ $slide['insta'] }}" target="_blank">
-                                                                    <span class="qodef-e-social-icon">
-                                                                        <i aria-hidden="true"
-                                                                            class="fab fa-instagram"></i> </span>
-                                                                </a>
-                                                                <a class="qodef-e-social-icon-link" itemprop="url"
-                                                                    href="{{ $slide['gmail'] }}" target="_blank">
-                                                                    <span class="qodef-e-social-icon">
-                                                                        <i aria-hidden="true" class="far fa-envelope"></i>
-                                                                    </span>
-                                                                </a>
+                                                                            </span>
+                                                                            <div class="qodef-e-number">
+                                                                                {{ $counter++ }} </div>
+                                                                        </div>
+                                                                        <div class="qodef-e-line">
+                                                                            <div class="qodef-e-line-inner"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="qodef-e-title">
+                                                                        {{ $slide['title'] }}</h3>
+                                                                    <p class="qodef-e-text">
+                                                                        {{ $slide['details'] }} </p>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    @endforeach
+                                                @endif
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            @endforeach
-                        @endif
+                            </div>
+                        </div>
                     </div>
                 </section>
+
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-ed6ce2b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="ed6ce2b" data-element_type="section">
@@ -1181,6 +1001,7 @@
                         </div>
                     </div>
                 </section>
+                
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-076cd1a elementor-section-stretched elementor-section-height-min-height elementor-section-items-top elementor-section-boxed elementor-section-height-default"
                     data-id="076cd1a" data-element_type="section"
@@ -1260,6 +1081,7 @@
                         @endif
                     </div>
                 </section>
+
             </div>
                 @include('fronted.layouts.components.contentinfo')
 
@@ -1277,8 +1099,7 @@
 				header.addEventListener("click", () => {
 					const content = header.nextElementSibling;
 
-					// اغلاق كل الأكورديونات التانية
-					document.querySelectorAll(".accordion .content").forEach(c => {
+ 					document.querySelectorAll(".accordion .content").forEach(c => {
 						if (c !== content) {
 							c.style.maxHeight = null;
 							c.classList.remove("open");
@@ -1286,8 +1107,7 @@
 						}
 					});
 
-					// فتح أو غلق اللي اتداس عليه
-					if (content.style.maxHeight) {
+ 					if (content.style.maxHeight) {
 						content.style.maxHeight = null;
 						content.classList.remove("open");
 						header.classList.remove("active");
@@ -1299,4 +1119,95 @@
 				});
 			});
 		</script>
+        <style>
+            .elementor-section[data-id="5962a50"] {
+                margin-top: 120px;
+                padding: 80px 0;
+                background-color: #f9f9f9;
+                position: relative;
+            }
+
+            .elementor-background-overlay {
+                background: rgba(0, 0, 0, 0.05);
+            }
+
+            .qodef-qi-process {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: space-between;
+            }
+
+            .qodef-process-item {
+                background: #fff;
+                border-radius: 15px;
+                padding: 30px 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                transition: transform 0.4s ease, box-shadow 0.4s ease;
+                flex: 1 1 calc(25% - 20px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .qodef-process-item:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            }
+
+            .qodef-e-item-icon-text .qodef-m-image img {
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                margin-bottom: 15px;
+                transition: transform 0.3s ease;
+            }
+
+            .qodef-process-item:hover .qodef-e-item-icon-text img {
+                transform: scale(1.1);
+            }
+
+            .qodef-e-number {
+                font-size: 28px;
+                font-weight: bold;
+                color: #ff6f61;
+                margin-bottom: 10px;
+            }
+
+            .qodef-e-title {
+                font-size: 20px;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .qodef-e-text {
+                font-size: 15px;
+                color: #666;
+                line-height: 1.6;
+            }
+
+            .qodef-e-line-inner {
+                width: 100%;
+                height: 3px;
+                background: #ff6f61;
+                margin: 20px 0 0 0;
+                border-radius: 2px;
+            }
+
+            @media (max-width: 1200px) {
+                .qodef-process-item {
+                    flex: 1 1 calc(50% - 20px);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .qodef-process-item {
+                    flex: 1 1 100%;
+                }
+            }
+
+        </style>
     @endsection
