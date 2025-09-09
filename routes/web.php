@@ -56,7 +56,9 @@ Route::get('/', [HomeController::class,'index'])->name('index');
 
 // Slider section
     Route::get('/home', [HomeController::class,'slides'])->name('slides'); 
-    Route::get('/home/slide', [HomeController::class,'slides'])->name('slides'); 
+    Route::get('/home/slide', function () {
+        return redirect()->route('dashboard.slides');
+    });
     Route::get('/home/slide/add', [HomeController::class,'addslide'])->name('slide.add'); 
     Route::post('/home/slide/store', [HomeController::class,'storeslide'])->name('slide.store'); 
     Route::get('/home/slide/edit/{id}', [HomeController::class,'editslide'])->name('slide.edit'); 
