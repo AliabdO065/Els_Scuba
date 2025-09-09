@@ -24,7 +24,9 @@ use Illuminate\Support\Facades\Auth;
 Route::group(['as'=>'fronted.' ], function () {
 
     Route::get('/', [FrontedController::class,'home'])->name('index'); 
-    Route::get('/home', [FrontedController::class,'home'])->name('index'); 
+    Route::get('/home', function () {
+        return redirect()->route('fronted.index');
+    });
     Route::get('/about', [FrontedController::class,'about'])->name('about'); 
     Route::get('/services', [FrontedController::class,'services'])->name('services'); 
     Route::get('/projects', [FrontedController::class,'projects'])->name('projects'); 
