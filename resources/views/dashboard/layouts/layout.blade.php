@@ -161,6 +161,8 @@
     <script src="{{asset('dashboard/assets/vendor/easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
     <script src="{{asset('dashboard/assets/vendor/chart.js/Chart.min.js')}}"></script> <!-- END PLUGINS JS -->
     <!-- BEGIN THEME JS -->
+    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
+
     <script src="{{asset('dashboard/assets/javascript/theme.min.js')}}"></script> <!-- END THEME JS -->
     <!-- BEGIN PAGE LEVEL JS -->
     <script src="{{asset('dashboard/assets/javascript/pages/dashboard-demo.js')}}"></script> <!-- END PAGE LEVEL JS -->
