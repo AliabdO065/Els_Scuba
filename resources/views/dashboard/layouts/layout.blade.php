@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="{{asset('dashboard/assets/stylesheets/theme.min.css')}}" data-skin="default">
     <link rel="stylesheet" href="{{asset('dashboard/assets/stylesheets/theme-dark.min.css')}}" data-skin="dark">
     <link rel="stylesheet" href="{{asset('dashboard/assets/stylesheets/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('dashboard/assets/css/all.min.css')}}">
+
     <script>
       var skin = localStorage.getItem('skin') || 'default';
       var isCompact = JSON.parse(localStorage.getItem('hasCompactMenu'));
