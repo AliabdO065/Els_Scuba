@@ -17,7 +17,7 @@
     ">
         <img src="{{ asset('images/logo.jpg') }}" 
              alt="Els Scuba Logo" 
-             style="display:block; width:80px; height:85px; object-fit:cover; border-radius:50%;margin-left: 30px;">
+     style="display:block; max-width:70px; height:auto; border-radius:50%; margin-left:30px; object-fit:cover;">
     </div>
 
     <!-- Text part -->

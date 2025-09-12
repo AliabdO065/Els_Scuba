@@ -33,9 +33,9 @@
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="144x144" href="{{asset('dashboard/assets/apple-touch-icon.png')}}">
     <link rel="shortcut icon" href="{{asset('dashboard/assets/favicon.ico')}}">
-    <meta name="theme-color" content="#3063A0"><!-- End FAVICONS -->
+    <meta name="theme-color" content="#3063A0">
     <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600" rel="stylesheet"><!-- End GOOGLE FONT -->
+    {{-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600" rel="stylesheet"><!-- End GOOGLE FONT --> --}}
     <!-- BEGIN PLUGINS STYLES -->
     <link rel="stylesheet" href="{{asset('dashboard/assets/vendor/open-iconic/font/css/open-iconic-bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('dashboard/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
