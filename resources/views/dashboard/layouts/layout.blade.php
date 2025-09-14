@@ -44,7 +44,8 @@
     <link rel="stylesheet" href="{{asset('dashboard/assets/stylesheets/theme.min.css')}}" data-skin="default">
     <link rel="stylesheet" href="{{asset('dashboard/assets/stylesheets/theme-dark.min.css')}}" data-skin="dark">
     <link rel="stylesheet" href="{{asset('dashboard/assets/stylesheets/custom.css')}}">
-    <script>
+    <script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papRIJ3zRj2lf4y+Kq8S5N1Jr4l3GhptpNn+e9vG6P1mQb4YJp5jR+eyy7q4l2gFy5kQ1+ZLxQWZc6QJ7K6rAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
       var skin = localStorage.getItem('skin') || 'default';
       var isCompact = JSON.parse(localStorage.getItem('hasCompactMenu'));
       var disabledSkinStylesheet = document.querySelector('link[data-skin]:not([data-skin="' + skin + '"])');
