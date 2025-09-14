@@ -12,7 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papRIJ3zRj2lf4y+Kq8S5N1Jr4l3GhptpNn+e9vG6P1mQb4YJp5jR+eyy7q4l2gFy5kQ1+ZLxQWZc6QJ7K6rAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papRIJ3zRj2lf4y+Kq8S5N1Jr4l3GhptpNn+e9vG6P1mQb4YJp5jR+eyy7q4l2gFy5kQ1+ZLxQWZc6QJ7K6rAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
