@@ -488,6 +488,9 @@
     <link rel='stylesheet' id='energify-style-css'
         href='{{ asset('fronted/wp-content/themes/NetZero/style18cf.css?ver=6.2.3') }}' type='text/css'
         media='all' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <style id='energify-style-inline-css' type='text/css'>
         .site-title {
             font-family: 'Jost';
@@ -857,16 +860,7 @@
         }
     </style>
 
-
-
-
-
     @yield('content')
-
-
-
-
-
 
     <script type='text/javascript' src='{{ asset('fronted/wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2') }}'
         id='jquery-ui-core-js'></script>

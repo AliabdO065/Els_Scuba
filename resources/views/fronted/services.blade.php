@@ -84,7 +84,7 @@
 			.accordion {
  				border-radius: 5px;
 				overflow: hidden;
-				margin-top: 20px;
+				margin-top: 78px;
 			}
 
 			.accordion h3 {
@@ -656,7 +656,11 @@
                                 </div>
                             </div>
                         </section>
-						<hr>
+
+
+						<hr style="margin-top:50px ">
+
+
                          @isset($services[$i + 1])
                             <?php
                             $string = $services[$i + 1];
@@ -784,7 +788,9 @@
 
                             </div>
                         </section>
-						<hr>
+
+
+						<hr style="margin-top:80px ">
                         @endisset
                     @endfor
                 @endif
@@ -1084,6 +1090,7 @@
 
             </div>
                 @include('fronted.layouts.components.contentinfo')
+            @include('fronted.layouts.components.feedback')
 
         </div>
 

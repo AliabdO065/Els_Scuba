@@ -38,10 +38,10 @@
             <label >category</label>
             <select  name="category"class="form-control"> 
                 <option <?php if($slide['category']=='News') echo'selected' ?> value="News">News</option>
-                <option <?php if($slide['category']=='INSIGHTS') echo'selected'?> value="INSIGHTS">INSIGHTS</option>
+                <option <?php if($slide['category']=='INSIGHTS') echo'selected'?> value="INSIGHTS">Trips</option>
               </select>
         </div>
-        <div class="mb-3">
+        <div class="mb-3" style="margin-top: 60px">
             <label >title</label>
             <input type="text" class="form-control" value="{{$slide['title']}}" name="title" >
         </div>

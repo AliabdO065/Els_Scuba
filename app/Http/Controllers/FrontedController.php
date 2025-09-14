@@ -162,26 +162,14 @@ class FrontedController extends Controller
         $nitem = '';
        }
 
-
-    //    $r = 0;
-    //         for($k = 0 ; $k < count($content) ;$k++ ){
-    //         if($k == $i || $k == $next ||$k == $pre ){
-    //             $ritem = '';continue;
-    //         }
-    //         $temp = $this->getArray(1, News::class,$k);
-    //         if($temp['status'] == "disappear") continue;
-    //         else if ($temp['status'] == "appear"){
-    //             $ritem = $temp;$r=$k; break;
-    //         }
-    //     }
-
         return view('fronted.newsDetails',compact('item','pitem','nitem','i','pre','next','content'));
     }
     
     public function contact(){
         $main = $this->getit(1 ,Contact::class);
+        $feedbacks = $this->getContent(3 ,Contact::class);
         $footer = $this->getContent(9, Home::class);
-        return view('fronted.contact',compact('main','footer'));
+        return view('fronted.contact',compact('main','footer','feedbacks'));
     }
 
 }

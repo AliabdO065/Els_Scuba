@@ -29,24 +29,24 @@
             ?>
             {{-- <input type="hidden" name="old" value="{{$old}}"> --}}
             <div class="mb-3">
-                <label >Header of Projects Srction</label>
+                <label >Header of Participant Srction</label>
                 <input type="text" style="width: 30%" class="form-control" value="{{$slide['headerprojects']}}" name="headerprojects" >
             </div>
             <div class="mb-3">
                 <input type="text" class="form-control" value="{{$slide['wordheaderprojects']}}" name="wordheaderprojects" >
             </div> <hr>
-            <a href="{{route('dashboard.projects')}}" type="button" class="btn btn-success">Go to Projects</a>
+            <a href="{{route('dashboard.projects')}}" type="button" class="btn btn-success">Go to Participant</a>
             <button type="submit" class="btn btn-primary">Edit</button>
             <hr>
             <hr>
             <div class="mb-3">
-                <label >Header of news Srction</label>
+                <label >Header of Highlights Srction</label>
                 <input type="text" style="width: 30%" class="form-control" value="{{$slide['headernews']}}" name="headernews" >
             </div>
             <div class="mb-3">
                 <input type="text" class="form-control" value="{{$slide['wordheadernews']}}" name="wordheadernews" >
             </div>
-            <a href="{{route('dashboard.news')}}" type="button" class="btn btn-success">Go to News</a>
+            <a href="{{route('dashboard.news')}}" type="button" class="btn btn-success">Go to Highlights</a>
             <button type="submit" class="btn btn-primary">Edit</button>
         </form>
         </div>

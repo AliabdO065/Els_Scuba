@@ -4,7 +4,7 @@
 
 .elementor-998 .elementor-element.elementor-element-562f097e:not(.elementor-motion-effects-element-type-background),
 .elementor-998 .elementor-element.elementor-element-562f097e>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../../../../../../images/backgrounds/contact.jpg");
+    background-image: url("/images/backgrounds/contact.jpg");
     background-position: center center;
     background-size: cover;
 }

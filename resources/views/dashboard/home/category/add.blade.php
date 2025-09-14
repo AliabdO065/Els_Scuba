@@ -25,12 +25,10 @@
                     <option value="disappear">disappear</option>
                   </select>
             </div>
-
-            <div class="mb-3"> 
+            <div class="mb-3"> @error('img')<div class="alert alert-danger">{{ $message }}</div>@enderror
                 <label  >The Image</label>
-                <input  class="form-control" type="file" name="img">
-            </div>  
-
+                <input  class="form-control" type="file" name="img" class="@error('img') is-invalid @enderror">
+            </div>
             <button type="submit" class="btn btn-primary">Add</button>
         </form>
         </div>

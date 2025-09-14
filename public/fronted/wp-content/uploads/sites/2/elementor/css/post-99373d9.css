@@ -16,7 +16,7 @@
 
 .elementor-993 .elementor-element.elementor-element-4fd0ab28:not(.elementor-motion-effects-element-type-background),
 .elementor-993 .elementor-element.elementor-element-4fd0ab28>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../../../../../../../../../images/backgrounds/about.jpg");
+    background-image: url("/images/backgrounds/about.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -585,7 +585,7 @@
 
 .elementor-993 .elementor-element.elementor-element-6f1f97f7:not(.elementor-motion-effects-element-type-background),
 .elementor-993 .elementor-element.elementor-element-6f1f97f7>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../../../../../../../../../images/backgrounds/welcome_about.jpg");
+    background-image: url("/images/backgrounds/welcome_about.jpg");
     background-size: cover;
 }
 

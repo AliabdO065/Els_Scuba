@@ -38,11 +38,11 @@
                 <input type="text"  value="{{$slide['twitter']}}" class="form-control" style="position: relative;left: 2%;width: 66%;" name="twitter"> 
             </div>
             <div class="mb-3 pb-1  form-inline">
-                <label >Social Media</label> 
+                <label >Instagram</label> 
                 <input type="text" class="form-control"  value="{{$slide['insta']}}" style="position: relative;left: 2%;width: 66%;" name="insta">
             </div>
             <div class="mb-3 pb-1  form-inline"> 
-                <label >Social Media</label> 
+                <label >Gmail</label> 
                 <input type="text" class="form-control"  value="{{$slide['gmail']}}" style="position: relative;left: 2%;width: 66%;" name="gmail"> 
             </div>
             <div class="mb-3"> 

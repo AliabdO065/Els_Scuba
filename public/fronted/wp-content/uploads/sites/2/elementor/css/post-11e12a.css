@@ -356,7 +356,7 @@
 .elementor-11 .elementor-element.elementor-element-4e50cd9:not(.elementor-motion-effects-element-type-background),
 .elementor-11 .elementor-element.elementor-element-4e50cd9>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: #1C1D24;
-    background-image: url("../../../../../../../../../../images/backgrounds/animated_home.jpg");
+    background-image: url("/images/backgrounds/animated_home.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -1513,7 +1513,7 @@
 
 .elementor-11 .elementor-element.elementor-element-7c2926ed:not(.elementor-motion-effects-element-type-background),
 .elementor-11 .elementor-element.elementor-element-7c2926ed>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../../../../../../../../../images/backgrounds/welcome_homes.jpg");
+    background-image: url("/images/backgrounds/welcome_homes.jpg");
     background-position: center center;
     background-size: cover;
 }

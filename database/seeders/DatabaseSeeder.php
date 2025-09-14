@@ -19,13 +19,13 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->create([
             'name' => 'Elsayed Morad',
-            'email' => 'admin@gmail.com',
-            'password' =>Hash::make('12345'),
+            'email' => 'contact@elsscuba.co.uk',
+            'password' =>Hash::make('elsMscuba@123'),
         ]);
 
-        $this->call([
-            HomeSeeder::class,
-        ]);
+        // $this->call([
+        //     HomeSeeder::class,
+        // ]);
     
 
 

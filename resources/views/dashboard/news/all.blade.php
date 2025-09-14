@@ -33,7 +33,7 @@
                                 <td>
                                     <img  src="{{asset($slide['img'])}}" class="card-img-top" style="height: 69px;width: 136px;" alt="...">
                                 </td>
-                                <td>{{$slide['category']}}</td>
+                                <td>{{ $slide['category'] === 'INSIGHTS' ? 'Trips' : $slide['category'] }}</td>
                                 <td>{{$slide['status']}}</td>
                                 <td style="display: flex;height: 99px;">
                                     <a style="border-radius: 40%;  font-size: 14px;"  href="{{route('dashboard.news.edit',  $i )}}" class="btn btn-primary">Edit</a> 

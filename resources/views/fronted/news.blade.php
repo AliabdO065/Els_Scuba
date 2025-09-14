@@ -193,18 +193,35 @@
                             <div class="post-header post-header-classic archive-header">
                                 <header class="entry-header">
                                     {{-- ////////////////////////////////////////////////modify --}}
-                                    <h1 style="margin-top: 100px;" class="entry-title">
-                                        <span class="cat-title">
-                                            <?php
-                                            
-                                            if ($word == 'INSIGHTS') {
-                                                echo 'Trips';
-                                            } else {
-                                                echo 'Lasted Articals';
-                                            }
-                                            
-                                            ?>
-                                        </span> <!-- .cat-title -->
+                                    <h1 style="margin-top: 100px;" class="entry-title" >
+                                      <span  class="cat-title d-flex flex-column">
+                                            @if($word == 'INSIGHTS') 
+                                            {{ 'Trips'}}
+                                                <a href="{{ route('fronted.onlyinsight') }}" class="small-link">Trips</a>
+                                                <a href="{{ route('fronted.onlynews') }}" class="small-link">News</a>
+                                            @else 
+                                            {{ 'Lasted News'}}
+                                                <a href="{{ route('fronted.onlyinsight') }}" class="small-link">Trips</a>
+                                                <a href="{{ route('fronted.onlynews') }}" class="small-link">News</a>
+                                            @endif
+
+                                        
+                                        </span>
+<style>
+    .cat-title {
+        /* display: flex; */
+        flex-direction: column;
+        gap: 4px; 
+    }
+    .cat-title .small-link {
+        font-size: 0.8rem;  
+        color: #0f5eb4; 
+        text-decoration: none; 
+    }
+    .cat-title .small-link:hover {
+        text-decoration: underline;
+    }
+</style>
                                     </h1> <!-- .entry-title -->
                                 </header> <!-- .entry-header -->
                             </div> <!-- .post-header .post-header-classic .archive-header -->
@@ -250,7 +267,7 @@
                                                         <header class="entry-header">
                                                             <h2 class="entry-title">
                                                                 <a
-                                                                    href="{{ route('fronted.newsDetails', $i) }}">{{ $slide['title'] }}</a>
+                                                                    href="{{ route('fronted.newsDetails', $i) }}">{{ $slide['category'] === 'INSIGHTS' ? 'Trip' : $slide['category'] }}</a>
                                                             </h2>
                                                             <div class="entry-meta below-title">
                                                                 <span class="cat-links">
@@ -258,11 +275,11 @@
                                                                         in
                                                                         @if ($slide['category'] == 'NEWS')
                                                                     </span> <a href="{{ route('fronted.onlynews') }}"
-                                                                        rel="category tag">{{ $slide['category'] }}</a>
-                                                                </span> <!-- .cat-links -->
+                                                                        rel="category tag">{{ $slide['category'] === 'INSIGHTS' ? 'Trips' : $slide['category'] }}</a>
+                                                                </span>  
                                                             @else
                                                                 </span> <a href="{{ route('fronted.onlyinsight') }}"
-                                                                    rel="category tag">{{ $slide['category'] }}</a>
+                                                                    rel="category tag">{{ $slide['category'] === 'INSIGHTS' ? 'Trips' : $slide['category'] }}</a>
                                                                 </span> <!-- .cat-links -->
                                         @endif
                                         <span class="posted-on">
@@ -322,6 +339,7 @@
         </div> <!-- #main .site-main -->
 
                       @include('fronted.layouts.components.contentinfo')
+            @include('fronted.layouts.components.feedback')
 
         </div>
 

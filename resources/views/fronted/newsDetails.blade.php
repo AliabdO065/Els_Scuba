@@ -511,7 +511,8 @@
                     </div> <!-- #primary .content-area -->
                 </div> <!-- layout -->
             </div> <!-- #main .site-main -->
-                @include('fronted.layouts.components.contentinfo')
+                @include('fronted.layouts.components.contentinfo')            @include('fronted.layouts.components.feedback')
+
         </div>
 
         <style id='core-block-supports-inline-css' type='text/css'>

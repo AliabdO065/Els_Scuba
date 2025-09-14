@@ -59,7 +59,7 @@
                   <div class="col ml-6 bord">
                     <!-- .metric -->
                     <a href="{{route('dashboard.news')}}" class="metric metric-bordered align-items-center">
-                      <h2 class="metric-label"> News </h2>
+                      <h2 class="metric-label"> Highlights </h2>
                       <p class="metric-value h3">
                         <sub><i class="fa fa-newspaper"></i></sub> <span class="value">{{count($news)}} </span>
                       </p>

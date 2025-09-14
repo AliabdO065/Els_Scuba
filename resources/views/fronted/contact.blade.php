@@ -77,156 +77,25 @@
 
     <body
         class="page-template page-template-elementor_header_footer page page-id-998 qodef-qi--no-touch qi-addons-for-elementor-1.6.5 elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-998">
-      
-        {{-- 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-                <defs>
-                    <filter id="wp-duotone-dark-grayscale">
-                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                        <feComponentTransfer color-interpolation-filters="sRGB">
-                            <feFuncR type="table" tableValues="0 0.49803921568627" />
-                            <feFuncG type="table" tableValues="0 0.49803921568627" />
-                            <feFuncB type="table" tableValues="0 0.49803921568627" />
-                            <feFuncA type="table" tableValues="1 1" />
-                        </feComponentTransfer>
-                        <feComposite in2="SourceGraphic" operator="in" />
-                    </filter>
-                </defs>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-                <defs>
-                    <filter id="wp-duotone-grayscale">
-                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                        <feComponentTransfer color-interpolation-filters="sRGB">
-                            <feFuncR type="table" tableValues="0 1" />
-                            <feFuncG type="table" tableValues="0 1" />
-                            <feFuncB type="table" tableValues="0 1" />
-                            <feFuncA type="table" tableValues="1 1" />
-                        </feComponentTransfer>
-                        <feComposite in2="SourceGraphic" operator="in" />
-                    </filter>
-                </defs>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-                <defs>
-                    <filter id="wp-duotone-purple-yellow">
-                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                        <feComponentTransfer color-interpolation-filters="sRGB">
-                            <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
-                            <feFuncG type="table" tableValues="0 1" />
-                            <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
-                            <feFuncA type="table" tableValues="1 1" />
-                        </feComponentTransfer>
-                        <feComposite in2="SourceGraphic" operator="in" />
-                    </filter>
-                </defs>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-                <defs>
-                    <filter id="wp-duotone-blue-red">
-                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                        <feComponentTransfer color-interpolation-filters="sRGB">
-                            <feFuncR type="table" tableValues="0 1" />
-                            <feFuncG type="table" tableValues="0 0.27843137254902" />
-                            <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
-                            <feFuncA type="table" tableValues="1 1" />
-                        </feComponentTransfer>
-                        <feComposite in2="SourceGraphic" operator="in" />
-                    </filter>
-                </defs>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-                <defs>
-                    <filter id="wp-duotone-midnight">
-                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                        <feComponentTransfer color-interpolation-filters="sRGB">
-                            <feFuncR type="table" tableValues="0 0" />
-                            <feFuncG type="table" tableValues="0 0.64705882352941" />
-                            <feFuncB type="table" tableValues="0 1" />
-                            <feFuncA type="table" tableValues="1 1" />
-                        </feComponentTransfer>
-                        <feComposite in2="SourceGraphic" operator="in" />
-                    </filter>
-                </defs>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-                <defs>
-                    <filter id="wp-duotone-magenta-yellow">
-                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                        <feComponentTransfer color-interpolation-filters="sRGB">
-                            <feFuncR type="table" tableValues="0.78039215686275 1" />
-                            <feFuncG type="table" tableValues="0 0.94901960784314" />
-                            <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
-                            <feFuncA type="table" tableValues="1 1" />
-                        </feComponentTransfer>
-                        <feComposite in2="SourceGraphic" operator="in" />
-                    </filter>
-                </defs>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-                <defs>
-                    <filter id="wp-duotone-purple-green">
-                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                        <feComponentTransfer color-interpolation-filters="sRGB">
-                            <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
-                            <feFuncG type="table" tableValues="0 1" />
-                            <feFuncB type="table" tableValues="0.44705882352941 0.4" />
-                            <feFuncA type="table" tableValues="1 1" />
-                        </feComponentTransfer>
-                        <feComposite in2="SourceGraphic" operator="in" />
-                    </filter>
-                </defs>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-                role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-                <defs>
-                    <filter id="wp-duotone-blue-orange">
-                        <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                            values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                        <feComponentTransfer color-interpolation-filters="sRGB">
-                            <feFuncR type="table" tableValues="0.098039215686275 1" />
-                            <feFuncG type="table" tableValues="0 0.66274509803922" />
-                            <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
-                            <feFuncA type="table" tableValues="1 1" />
-                        </feComponentTransfer>
-                        <feComposite in2="SourceGraphic" operator="in" />
-                    </filter>
-                </defs>
-            </svg>
-        --}}
-        
+
         <div id="page" class="hfeed site">
             <header id="masthead" class="site-header" role="banner">
                 <div class="header-wrap" data-parallax-video="">
                     <div class="header-wrap-inner">
-                        <div class="site-branding" >
+                        <div class="site-branding">
                             @include('fronted.layouts.components.logo')
-                        </div>  
-                     
+                        </div>
+
                         <nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
                             <div class="menu-wrap">
                                 <div class="layout-medium">
-									@include('fronted.layouts.components.nav')
-                                </div> 
-                            </div> 
-                        </nav> 
-                    </div> 
-                </div> 
-            </header> 
+                                    @include('fronted.layouts.components.nav')
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
             <div data-elementor-type="wp-page" data-elementor-id="998" class="elementor elementor-998">
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-562f097e elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
@@ -240,6 +109,183 @@
                         </div>
                     </div>
                 </section>
+
+
+
+
+
+
+
+
+
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-354be38f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+    data-id="354be38f" data-element_type="section">
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-35a4704f"
+            data-id="35a4704f" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-2a6fe01 elementor-widget elementor-widget-qi_addons_for_elementor_image_slider"
+                    data-id="2a6fe01" data-element_type="widget"
+                    data-widget_type="qi_addons_for_elementor_image_slider.default">
+                    <div class="elementor-widget-container">
+                        <div class="qodef-shortcode qodef-m  qodef-qi-image-slider qodef-qi-fslightbox-popup qodef-popup-gallery qodef-image--hover-zoom-out  qodef--centered-zoom qodef-col-num--4 qodef-qi-grid qodef-qi-swiper-container  qodef-navigation--inside qodef-navigation--hover-move"
+                            data-options="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;slidesPerView&quot;:&quot;4&quot;,&quot;spaceBetween&quot;:30,&quot;spaceBetweenTablet&quot;:30,&quot;spaceBetweenMobile&quot;:30,&quot;effect&quot;:&quot;&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:true,&quot;centeredSlides&quot;:true,&quot;speed&quot;:&quot;3000&quot;,&quot;speedAnimation&quot;:&quot;&quot;,&quot;outsideNavigation&quot;:&quot;no&quot;,&quot;outsidePagination&quot;:&quot;no&quot;,&quot;unique&quot;:560,&quot;partialValue&quot;:0,&quot;disablePartialValue&quot;:&quot;&quot;}">
+
+                            <div class="swiper-wrapper">
+                                @if (!empty($feedbacks[0]))
+                                    @foreach ($feedbacks as $i => $slides)
+                                        <?php
+                                        $string = $slides;
+                                        $pairs = explode('#x#', $string);
+                                        $slide = [];
+                                        foreach ($pairs as $pair) {
+                                            [$key, $value] = explode('=#=', $pair);
+                                            $slide[$key] = $value;
+                                        }
+                                        ?>
+                                        <div class="qodef-e swiper-slide">
+                                            <div
+                                                class="qodef-e qodef-process-item qodef-grid-item elementor-repeater-item-e90ae08 feedback-card">
+                                                <div class="qodef-e-inner">
+                                                    <div class="qodef-e-content">
+                                                        <div class="qodef-e-icon-holder">
+                                                            <div class="qodef-e-icon">
+                                                                <span class="qodef-e-item-icon-text">
+                                                                    <div class="qodef-m-image">
+                                                                        <div class="qodef-m-media-image">
+                                                                             
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                            <div class="qodef-e-line">
+                                                                <div class="qodef-e-line-inner"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <h3 class="qodef-e-title">
+                                                            {{ $slide['name'] }}
+                                                        </h3>
+
+                                                         @if(isset($slide['rate']))
+                                                            <div class="rating">
+                                                                @for ($star = 1; $star <= 5; $star++)
+                                                                    @if ($star <= $slide['rate'])
+                                                                        <span class="star filled">&#9733;</span>
+                                                                    @else
+                                                                        <span class="star">&#9734;</span>
+                                                                    @endif
+                                                                @endfor
+                                                            </div>
+                                                        @endif
+
+                                                        <p class="qodef-e-text">
+                                                            {{ $slide['message'] }}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            </div>
+
+                            <div class="swiper-button-prev"><</div>
+                            <div class="swiper-button-next">></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* ===== Feedback Card ===== */
+.feedback-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 250px;   /* 👈 ارتفاع ثابت للكارت */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.feedback-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* ===== Name ===== */
+.feedback-card .qodef-e-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+/* ===== Rating Stars ===== */
+.rating {
+    margin: 6px 0;
+    font-size: 18px;
+}
+.star {
+    color: #ccc;
+    margin: 0 2px;
+    transition: transform 0.2s;
+}
+.star.filled {
+    color: #f5c518;
+}
+.star:hover {
+    transform: scale(1.2);
+}
+
+/* ===== Message ===== */
+.feedback-card .qodef-e-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 8px;
+    flex-grow: 1; /* يوسع الرسالة عشان يوزن المحتوى */
+}
+
+/* ===== Swiper Arrows ===== */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255); /* زر أزرق */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: rgb(255, 255, 255); /* لون أغمق عند الهوفر */
+    opacity: 1;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+    stroke: #fff; /* الأسهم تبقى بيضا */
+    width: 20px;
+    height: 20px;
+}
+
+</style>
+
+
+
+
+
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-6d7349a5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="6d7349a5" data-element_type="section">
@@ -270,7 +316,6 @@
                                     data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <style>
-                                            /*! elementor - v3.17.0 - 08-11-2023 */
                                             .elementor-heading-title {
                                                 padding: 0;
                                                 margin: 0;
@@ -714,6 +759,12 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+
+
+
                         <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3d27bed2"
                             data-id="3d27bed2" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
@@ -778,10 +829,9 @@
                                                         <button type="submit" name="wpforms[submit]"
                                                             id="wpforms-submit-8584" class="wpforms-submit"
                                                             data-alt-text="Sending..." data-submit-text="Submit"
-                                                            aria-live="assertive"
-                                                            value="wpforms-submit"
+                                                            aria-live="assertive" value="wpforms-submit"
                                                             style="background-color:#346cb0">Send</button>
-                                                            <img decoding="async"
+                                                        <img decoding="async"
                                                             src="../wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg"
                                                             class="wpforms-submit-spinner" style="display: none;"
                                                             width="26" height="26" alt="Loading">
@@ -881,7 +931,8 @@
 
                 </section>
             </div>
-                @include('fronted.layouts.components.contentinfo')
+            @include('fronted.layouts.components.contentinfo')
+            @include('fronted.layouts.components.feedback')
 
         </div>
 

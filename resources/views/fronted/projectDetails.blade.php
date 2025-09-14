@@ -1125,8 +1125,8 @@
                     </div>
                 </section>
             </div>
-                          @include('fronted.layouts.components.contentinfo')
-
+            @include('fronted.layouts.components.contentinfo')
+            @include('fronted.layouts.components.feedback')
         </div>
 
         <link rel='stylesheet' id='elementor-icons-shared-0-css'

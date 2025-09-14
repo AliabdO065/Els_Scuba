@@ -13,7 +13,7 @@
             <div id="dropdown-aside" class="dropdown-aside collapse">
               <!-- dropdown-items -->
               <div class="pb-3">
-                 <a class="dropdown-item" href="{{route('logout')}}"><span class="dropdown-icon oi oi-account-logout"></span> Logout</a>
+                 <a class="dropdown-item" href="{{route('logout')}}">  <span class="dropdown-icon"><i class="fas fa-sign-out-alt"></i></span> Logout Logout</a>
               </div><!-- /dropdown-items -->
             </div><!-- /.dropdown-aside -->
           </header><!-- /.aside-header -->
@@ -47,7 +47,7 @@
                       <a href="{{route('dashboard.images.home')}}" class="menu-link">Images</a>
                     </li>
                     <li class="menu-item">
-                      <a href="{{route('dashboard.control')}}" class="menu-link">Project & News</a>
+                      <a href="{{route('dashboard.control')}}" class="menu-link">Participants & Highlights</a>
                     </li>
                     <li class="menu-item">
                       <a href="{{route('dashboard.master')}}" class="menu-link">Masters</a>
@@ -92,7 +92,7 @@
                 </li><!-- /.menu-item -->
                 <!-- .menu-item -->
                 <li class="menu-item has-child">
-                  <a href="#" class="menu-link"><span class="menu-icon oi oi-fork"></span> <span class="menu-text">Participants</span></a> <!-- child menu -->
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-code-branch"></span> <span class="menu-text">Participants</span></a> <!-- child menu -->
                   <ul class="menu">
                     <li class="menu-item">
                       <a href="{{route('dashboard.projects')}}" class="menu-link">All Participants</a>
@@ -126,6 +126,9 @@
                     </li>
                     <li class="menu-item">
                       <a href="{{route('dashboard.contact.contact.allmessage')}}" class="menu-link">Client's Message</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{{route('dashboard.contact.allfeedback')}}" class="menu-link">Client's feedback</a>
                     </li>
                   </ul><!-- /child menu -->
                 </li><!-- /.menu-item -->

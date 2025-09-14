@@ -271,6 +271,7 @@
             </div> <!-- #main .site-main -->
 
                          @include('fronted.layouts.components.contentinfo')
+            @include('fronted.layouts.components.feedback')
 
         </div>
 

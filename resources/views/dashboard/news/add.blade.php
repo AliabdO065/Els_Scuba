@@ -34,10 +34,10 @@
                     <label >category</label>
                     <select  name="category"class="form-control"> 
                         <option value="NEWS">News</option>
-                        <option value="INSIGHTS">INSIGHTS</option>
+                        <option value="INSIGHTS">Trips</option>
                       </select>
                 </div>        
-                <div class="mb-3">
+                <div class="mb-3" style="margin-top: 60px">
                     <label >title</label>
                     <input type="text" class="form-control"  name="title" >
                 </div>

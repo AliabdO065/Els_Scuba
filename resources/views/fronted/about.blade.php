@@ -203,6 +203,7 @@
                 </filter>
             </defs>
         </svg>
+
         <div id="page" class="hfeed site">
             <header id="masthead" class="site-header" role="banner">
                 <div class="header-wrap" data-parallax-video="">
@@ -941,7 +942,7 @@
                                                                             class="fab fa-instagram"></i> </span>
                                                                 </a>
                                                                 <a class="qodef-e-social-icon-link" itemprop="url"
-                                                                    href="{{ $slide['gmail'] }}" target="_blank">
+                                                                href="mailto:{{ $slide['gmail'] }}" target="_blank">
                                                                     <span class="qodef-e-social-icon">
                                                                         <i aria-hidden="true" class="far fa-envelope"></i>
                                                                     </span>
@@ -1175,6 +1176,7 @@
                 </section>
             </div>
 			@include('fronted.layouts.components.contentinfo')
+            @include('fronted.layouts.components.feedback')
 
         </div>
 

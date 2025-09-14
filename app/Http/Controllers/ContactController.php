@@ -20,7 +20,7 @@ class ContactController extends Controller
 
     public function __construct()
     {
-    $this->middleware('auth')->except(['message']);
+    $this->middleware('auth')->except(['message,allfeedback,feedback']);
     }
 
     //public function
@@ -94,7 +94,6 @@ class ContactController extends Controller
         $main = $this->getit(1, Contact::class);
         $footer = $this->getContent2(9, Home::class);
         return view('fronted.contact', compact('main', 'footer'));
-        // return view('fronted.contact');
     }
 
     public function allmessage()
@@ -116,7 +115,6 @@ class ContactController extends Controller
             list($key, $value) = explode('=#=', $pair);
             $slide[$key] = $value;
         }
-
         if ($id > 0)
             $old = '#xt#' . 'name=#=' . $slide['name'] . '#x#' . 'email=#=' . $slide['email'] . '#x#' . 'message=#=' . $slide['message'];
         else if (isset($content[1]))
@@ -127,5 +125,56 @@ class ContactController extends Controller
         Contact::find(2)->update(['content' => $newcontent]);
 
         return redirect()->route('dashboard.contact.contact.allmessage');
+    }
+
+    // feedback
+    public function feedback(Request $request)
+    {
+         $content = $this->getContent(3);
+        if (!empty($content[0]))
+            $str = '#xt#' . 'name=#=' . $request->name . '#x#' . 'rate=#=' . $request->rate . '#x#' . 'message=#=' . $request->message;
+        else
+            $str = 'name=#=' . $request->name . '#x#' . 'rate=#=' . $request->rate . '#x#' . 'message=#=' . $request->message;
+        $newcontent = $content . $str;
+        Contact::find(3)->update(['content' => $newcontent]);
+
+        $main = $this->getit(1, Contact::class);
+        $footer = $this->getContent2(9, Home::class);
+        return response()->json([
+                    'success' => true,
+                    'message' => 'Feedback saved successfully!'
+                ]);  
+            }
+
+    public function allfeedback()
+    {
+        $contentAsString = $this->getContent(3);
+        $content = explode("#xt#", $contentAsString);
+        return view('dashboard.contact.feedback', compact('content'));
+    }
+
+    public function deletefeedback($id)
+    {
+        $allcontent = $this->getContent(3);
+        $content = explode("#xt#", $allcontent);
+        $slide = $content[$id];
+        $pairs = explode('#x#', $slide);
+
+        $slide = [];
+        foreach ($pairs as $pair) {
+            list($key, $value) = explode('=#=', $pair);
+            $slide[$key] = $value;
+        }
+
+        if ($id > 0)
+            $old = '#xt#' . 'name=#=' . $slide['name'] . '#x#' . 'rate=#=' . $slide['rate'] . '#x#' . 'message=#=' . $slide['message'];
+        else if (isset($content[1]))
+            $old = 'name=#=' . $slide['name'] . '#x#' . 'rate=#=' . $slide['rate'] . '#x#' . 'message=#=' . $slide['message'] . '#xt#';
+        else
+            $old = 'name=#=' . $slide['name'] . '#x#' . 'rate=#=' . $slide['rate'] . '#x#' . 'message=#=' . $slide['message'];
+        $newcontent = str_replace($old, '', $allcontent);
+        Contact::find(3)->update(['content' => $newcontent]);
+
+        return redirect()->route('dashboard.contact.contact.allfeedback');
     }
 }

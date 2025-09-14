@@ -389,22 +389,26 @@ class HomeController extends Controller
             $path = 'images\home\certificate\\' . $filename;
             $str.='#x#'.'img=#='.$path;
 
-            $filePath = public_path($request->image); 
+            $pairs = explode('#x#', $old);
+            $slide = [];
+            foreach ($pairs as $pair) {
+                list($key, $value) = explode('=#=', $pair);
+                $slide[$key] = $value;
+            }
+            $filePath = public_path($slide['img']); 
             if (File::exists($filePath)) {
                 File::delete($filePath);
             }
         }else{
-            $str.='#x#'.'img=#='.$request->image;
+            $str.='#x#'.'img=#='.$request->img;
         }
 
-        $str.='#x#'.'status=#='.$request->status;
-        $newcontent = str_replace($old, $str, $allcontent);
+         $newcontent = str_replace($old, $str, $allcontent);
         Home::find(4)->update(['content' => $newcontent] );
         return redirect()->route('dashboard.category');
     }
 
 
- 
 ////
     public function deletecategory($id)
     {
@@ -435,7 +439,6 @@ class HomeController extends Controller
         return redirect()->route('dashboard.category');
 
     }
-
 
 
 

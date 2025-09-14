@@ -9,17 +9,7 @@ use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
+ 
 //frontend 
 Route::group(['as'=>'fronted.' ], function () {
 
@@ -38,10 +28,10 @@ Route::group(['as'=>'fronted.' ], function () {
     Route::get('/contact', [FrontedController::class,'contact'])->name('contact'); 
 
 
-
-
     Route::post('/news/comments', [NewsController::class,'comment'])->name('news.comment'); 
     Route::post('/contact/message', [ContactController::class,'message'])->name('contact.contact.message');
+    Route::post('/contact/feedback', [ContactController::class,'feedback'])->name('contact.feedback');
+    Route::get('/contact/allfeedback', [ContactController::class,'allfeedback'])->name('contact.allfeedback');
 
 });
 
@@ -171,6 +161,9 @@ Route::post('/contact/contact/update/', [ContactController::class,'updatecontact
 // message section
 Route::get('/contact/allmessage', [ContactController::class,'allmessage'])->name('contact.contact.allmessage');
 Route::get('/contact/allmessage/delete/{id}', [ContactController::class,'delete'])->name('contact.contact.allmessage.delete');
+// feedback
+Route::get('/contact/allfeedback', [ContactController::class,'allfeedback'])->name('contact.allfeedback');
+Route::get('/contact/allfeedback/delete/{id}', [ContactController::class,'deletefeedback'])->name('contact.allfeedback.delete');
 });
 
 

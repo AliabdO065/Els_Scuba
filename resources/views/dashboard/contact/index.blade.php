@@ -40,20 +40,20 @@
                 <input type="text" class="form-control" value="{{$slide['phone']}}" name="phone" >
             </div>
             <div class="mb-3">
+                <label >Instagram</label>
+                <input type="text" class="form-control" value="{{$slide['instagram']}}" name="instagram" >
+            </div>
+            <div class="mb-3" style="visibility: hidden">
                 <label >Facebook</label>
                 <input type="text" class="form-control" value="{{$slide['facebook']}}" name="facebook" >
             </div>
-            <div class="mb-3">
+            <div class="mb-3" style="visibility: hidden">
                 <label >Twitter</label>
                 <input type="text" class="form-control" value="{{$slide['twitter']}}" name="twitter" >
             </div>
-            <div class="mb-3">
+            <div class="mb-3" style="visibility: hidden">
                 <label >Youtube</label>
                 <input type="text" class="form-control" value="{{$slide['youtube']}}" name="youtube" >
-            </div>
-            <div class="mb-3">
-                <label >Instagram</label>
-                <input type="text" class="form-control" value="{{$slide['instagram']}}" name="instagram" >
             </div>
             <button type="submit" class="btn btn-primary">Edit</button>
         </form>

@@ -14,11 +14,11 @@
             </div>
                 @endif
         <!-- .page-inner -->
-        <form action="{{route('dashboard.category.update')}}" method="POST">
+        <form action="{{route('dashboard.category.update')}}" method="POST"  enctype="multipart/form-data">
             @csrf
             @method('POST')
             <input type="hidden" name="old" value="{{$old}}">
-            <input type="hidden" name="image"  value="{{$slide['img']}}">
+            <input type="hidden" name="img"  value="{{$slide['img']}}">
 
             <div class="mb-3">
               <label >Title</label>
