@@ -1540,12 +1540,12 @@
                                                                             @if ($slide['category'] == 'NEWS')
                                                                                 </span> <a
                                                                                     href="{{ route('fronted.onlynews') }}"
-                                                                                    rel="category tag">{{ $slide['category'] }}</a>
+                                                                                    rel="category tag">{{  $slide['category'] === 'INSIGHTS' ? 'Trip' : $slide['category']  }}</a>
                                                                                 </span> <!-- .cat-links -->
                                                                             @else
                                                                                 </span> <a
                                                                                     href="{{ route('fronted.onlyinsight') }}"
-                                                                                    rel="category tag">{{ $slide['category'] }}</a>
+                                                                                    rel="category tag">{{  $slide['category'] === 'INSIGHTS' ? 'Trip' : $slide['category'] }}</a> 
                                                                                 </span> <!-- .cat-links -->
                                                                             @endif
 
