@@ -103,17 +103,32 @@
                     <div class="dropdown-arrow"></div><!-- .dropdown-sheets -->
                     <div class="dropdown-sheets">
                       <!-- .dropdown-sheet-item -->
+
+
+
                       <div class="dropdown-sheet-item">
-                        <a href="{{route('dashboard.services')}}" class="tile-wrapper"><span class="tile tile-lg bg-indigo"><i class="fa fa-server"></i></span> <span class="tile-peek">Services</span></a>
-                      </div><!-- /.dropdown-sheet-item -->
-                      <!-- .dropdown-sheet-item -->
-                      <div class="dropdown-sheet-item">
-                        <a href="{{route('dashboard.projects')}}" class="tile-wrapper"><span class="tile tile-lg bg-teal"><i class="oi oi-fork"></i></span> <span class="tile-peek">Participants</span></a>
-                      </div><!-- /.dropdown-sheet-item -->
-                      <!-- .dropdown-sheet-item -->
-                      <div class="dropdown-sheet-item">
-                        <a href="{{route('dashboard.news')}}" class="tile-wrapper"><span class="tile tile-lg bg-yellow"><i class="fa fa-newspaper"></i></span> <span class="tile-peek">Highlights</span></a>
-                      </div><!-- /.dropdown-sheet-item -->
+  <a href="{{route('dashboard.services')}}" class="tile-wrapper">
+    <span class="tile tile-lg bg-indigo"><i class="oi oi-layers"></i></span> 
+    <span class="tile-peek">Services</span>
+  </a>
+</div>
+
+<div class="dropdown-sheet-item">
+  <a href="{{route('dashboard.projects')}}" class="tile-wrapper">
+    <span class="tile tile-lg bg-teal"><i class="oi oi-fork"></i></span> 
+    <span class="tile-peek">Participants</span>
+  </a>
+</div>
+
+<div class="dropdown-sheet-item">
+  <a href="{{route('dashboard.news')}}" class="tile-wrapper">
+    <span class="tile tile-lg bg-yellow"><i class="oi oi-document"></i></span> 
+    <span class="tile-peek">Highlights</span>
+  </a>
+</div>
+
+
+
                       <!-- .dropdown-sheet-item -->
                     </div><!-- .dropdown-sheets -->
                   </div><!-- .dropdown-menu -->

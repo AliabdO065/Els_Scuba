@@ -1,46 +1,32 @@
-<!-- .app-aside -->
 <aside class="app-aside app-aside-expand-md app-aside-light">
-  <!-- .aside-content -->
   <div class="aside-content">
-    <!-- .aside-header -->
     <header class="aside-header d-block d-md-none">
-      <!-- .btn-account -->
       <button class="btn-account" type="button" data-toggle="collapse" data-target="#dropdown-aside">
-        <span class="account-icon"><span class="fas fa-caret-down fa-lg"></span></span>
+        <span class="account-icon"><span class="oi oi-caret-bottom"></span></span>
         <span class="account-summary"><span class="account-name">{{Auth::user()->name}}</span></span>
       </button>
-      <!-- /.btn-account -->
-      <!-- .dropdown-aside -->
       <div id="dropdown-aside" class="dropdown-aside collapse">
-        <!-- dropdown-items -->
         <div class="pb-3">
           <a class="dropdown-item" href="{{route('logout')}}">
-            <span class="dropdown-icon"><i class="fas fa-sign-out-alt"></i></span> Logout
+            <span class="dropdown-icon"><i class="oi oi-account-logout"></i></span> Logout
           </a>
         </div>
       </div>
-      <!-- /.dropdown-aside -->
     </header>
-    <!-- /.aside-header -->
 
-    <!-- .aside-menu -->
     <div class="aside-menu overflow-hidden">
-      <!-- .stacked-menu -->
       <nav id="stacked-menu" class="stacked-menu">
-        <!-- .menu -->
         <ul class="menu">
-          <!-- Dashboard -->
           <li class="menu-item has-active">
             <a href="{{route('dashboard.index')}}" class="menu-link">
-              <span class="menu-icon fas fa-tachometer-alt"></span>
+              <span class="menu-icon oi oi-dashboard"></span>
               <span class="menu-text">Dashboard</span>
             </a>
           </li>
 
-          <!-- Home -->
           <li class="menu-item has-child">
             <a href="{{route('dashboard.slides')}}" class="menu-link">
-              <span class="menu-icon fas fa-home"></span>
+              <span class="menu-icon oi oi-home"></span>
               <span class="menu-text">Home</span>
             </a>
             <ul class="menu">
@@ -56,10 +42,9 @@
             </ul>
           </li>
 
-          <!-- About Us -->
           <li class="menu-item has-child">
             <a href="#" class="menu-link">
-              <span class="menu-icon fas fa-tree"></span>
+              <span class="menu-icon oi oi-book"></span>
               <span class="menu-text">About Us</span>
             </a>
             <ul class="menu">
@@ -69,10 +54,9 @@
             </ul>
           </li>
 
-          <!-- Services -->
           <li class="menu-item has-child">
             <a href="#" class="menu-link">
-              <span class="menu-icon fas fa-server"></span>
+              <span class="menu-icon oi oi-layers"></span>
               <span class="menu-text">Services</span>
             </a>
             <ul class="menu">
@@ -81,10 +65,9 @@
             </ul>
           </li>
 
-          <!-- Participants -->
           <li class="menu-item has-child">
             <a href="#" class="menu-link">
-              <span class="menu-icon fas fa-code-branch"></span>
+              <span class="menu-icon oi oi-people"></span>
               <span class="menu-text">Participants</span>
             </a>
             <ul class="menu">
@@ -93,10 +76,9 @@
             </ul>
           </li>
 
-          <!-- Highlights -->
           <li class="menu-item has-child">
             <a href="#" class="menu-link">
-              <span class="menu-icon fas fa-newspaper"></span>
+              <span class="menu-icon oi oi-document"></span>
               <span class="menu-text">Highlights</span>
             </a>
             <ul class="menu">
@@ -106,10 +88,9 @@
             </ul>
           </li>
 
-          <!-- Contact -->
           <li class="menu-item has-child">
             <a href="{{route('dashboard.contact.contact.index')}}" class="menu-link">
-              <span class="menu-icon fas fa-users"></span>
+              <span class="menu-icon oi oi-envelope-closed"></span>
               <span class="menu-text">Contact</span>
             </a>
             <ul class="menu">
@@ -120,19 +101,12 @@
           </li>
         </ul>
       </nav>
-      <!-- /.stacked-menu -->
     </div>
-    <!-- /.aside-menu -->
 
-    <!-- Skin changer -->
     <footer class="aside-footer border-top p-2">
       <button class="btn btn-light btn-block text-primary" data-toggle="skin">
-        <span class="d-compact-menu-none">Night mode</span> <i class="fas fa-moon ml-1"></i>
+        <span class="d-compact-menu-none">Night mode</span> <i class="oi oi-moon ml-1"></i>
       </button>
     </footer>
-    <!-- /Skin changer -->
-
   </div>
-  <!-- /.aside-content -->
 </aside>
-<!-- /.app-aside -->
