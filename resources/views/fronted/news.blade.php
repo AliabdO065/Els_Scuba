@@ -200,7 +200,7 @@
                                                 <a href="{{ route('fronted.onlyinsight') }}" class="small-link">Trips</a>
                                                 <a href="{{ route('fronted.onlynews') }}" class="small-link">News</a>
                                             @else 
-                                            {{ 'Lasted News'}}
+                                            {{ 'Latest News'}}
                                                 <a href="{{ route('fronted.onlyinsight') }}" class="small-link">Trips</a>
                                                 <a href="{{ route('fronted.onlynews') }}" class="small-link">News</a>
                                             @endif
