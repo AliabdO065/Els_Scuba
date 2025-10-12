@@ -1,11 +1,11 @@
 <button class="feedback-btn feedback-trigger">
     <span class="btn-text">review</span>
-    <span class="star star1">★</span>
-    <span class="star star2">★</span>
-    <span class="star star3">★</span>
-    <span class="star star4">★</span>
-    <span class="star star5">★</span>
-    <span class="star star6">★</span>
+    <span class="starx star1">★</span>
+    <span class="starx star2">★</span>
+    <span class="starx star3">★</span>
+    <span class="starx star4">★</span>
+    <span class="starx star5">★</span>
+    <span class="starx star6">★</span>
 </button>
 
 <div id="feedbackOverlay" class="feedback-overlay">
@@ -16,7 +16,7 @@
             <div class="card shadow-lg border-0 rounded-4 text-center">
                 <div class="card-header text-white fw-bold d-flex justify-content-center align-items-center position-relative"
                     style="background: linear-gradient(135deg,#3064af,#3064af); border-top-left-radius: 1rem; border-top-right-radius: 1rem; padding: 1rem;">
-                    <i class="fa fa-star me-2" style="color: #f5a623"></i>
+                    {{-- <i class="fa fa-star me-2" style="color: #f5a623"></i> --}}
                     <span style="color: #f5a623"> Feedback</span>
                     <span id="closeFeedback"
                         style="position:absolute; right:15px; cursor:pointer;color: #f5a623; font-size:1.8rem; margin-top: -11px;">&times;</span>
@@ -96,7 +96,7 @@
     }
 
     /* Star base styles */
-    .star {
+    .starx {
         position: absolute;
         color: gold;
         font-size: 15px;
@@ -150,8 +150,12 @@
     }
 
     .feedback-overlay.active .feedback-form {
-        transform: scale(1);
+        /* transform: scale(1); */
         opacity: 1;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .feedback-body {
