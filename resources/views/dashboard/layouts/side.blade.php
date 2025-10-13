@@ -126,7 +126,7 @@
                     <hr style="border:0; height:4px; background:#333; margin:15px 0; border-radius:2px;">
 
                    <li class="menu-item">
-                        <a href="https://addtext.com/photo/index?bgUrl=https%3A%2F%2Feu6-addtext.ft-uc.com%2Ftmp%2FMjAyNTEwMTI%2Faddtext_com_MTUyNjEyOmV1NjoxNDg4Mw.jpg" 
+                        <a href="https://addtext.com/photo/index?bgUrl=https%3A%2F%2Feu8-addtext.ft-uc.com%2Ftmp%2FMjAyNTEwMTM%2Faddtext_com_MTg0ODA1OmV1ODoxNTA0.jpg" 
                         class="menu-link" target="_blank">
                             <span class="menu-icon oi oi-book"></span>
                             <span class="menu-text">Certificates</span>
