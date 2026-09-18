@@ -860,6 +860,17 @@
         }
     </style>
 
+    <style>
+        /* Fix: qi-addons "animated by letter" widget splits Arabic titles into
+           per-character spans in logical (source) order, which the browser then
+           lays out left-to-right (LTR) because the page has no RTL context —
+           visually reversing every Arabic character. Forcing RTL direction on
+           the title makes the browser lay those spans out right-to-left again. */
+        .qodef-qi-animated-text .qodef-m-title {
+            direction: rtl;
+        }
+    </style>
+
     @yield('content')
 
     <script type='text/javascript' src='{{ asset('fronted/wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2') }}'
