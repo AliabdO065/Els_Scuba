@@ -1,4 +1,24 @@
-@extends('fronted.layouts.layout')
+<div style="
+    background-color: black;
+    height: 710px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+">
+    <h1 style="
+        color: white;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0;
+    ">
+       مرحبا بكم في موقعنا , برجاء تجديد الاشتراك الخاص بك لتتمكن من الاستمرار في استخدام خدماتنا
+    </h1>
+</div>
+
+{{-- @extends('fronted.layouts.layout') --}}
 @section('content')
     <link rel='stylesheet' id='elementor-icons-css'
         href='{{ asset('fronted/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min192d.css?ver=5.23.0') }}'
@@ -214,8 +234,8 @@
 
                         <nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
                             <div class="menu-wrap">
-                                <div class="layout-medium" >
-                              @include('fronted.layouts.components.nav')
+                                <div class="layout-medium">
+                                    @include('fronted.layouts.components.nav')
                                 </div>
                             </div> <!-- .menu-wrap -->
                         </nav> <!-- #site-navigation .main-navigation .site-navigation -->
@@ -988,23 +1008,23 @@
 
 
 
-                                                 <?php
-                                               $counter = 1;
+                                                <?php
+                                                $counter = 1;
                                                 ?>
                                                 @if (!empty($category[0]))
                                                     @foreach ($category as $i => $slides)
-                                                         <?php
-                                                    $string = $slides;
-                                                     $pairs = explode('#x#', $string);
-                                                     $slide = [];
-                                                    foreach ($pairs as $pair) {
-                                                        [$key, $value] = explode('=#=', $pair);
-                                                        $slide[$key] = $value;
-                                                    }
-                                                    if ($slide['status'] == 'disappear') {
-                                                        continue;
-                                                    }
-                                                      ?>
+                                                        <?php
+                                                        $string = $slides;
+                                                        $pairs = explode('#x#', $string);
+                                                        $slide = [];
+                                                        foreach ($pairs as $pair) {
+                                                            [$key, $value] = explode('=#=', $pair);
+                                                            $slide[$key] = $value;
+                                                        }
+                                                        if ($slide['status'] == 'disappear') {
+                                                            continue;
+                                                        }
+                                                        ?>
 
                                                         <div
                                                             class="qodef-e qodef-process-item qodef-grid-item elementor-repeater-item-e90ae08">
@@ -1013,16 +1033,18 @@
                                                                     <div class="qodef-e-icon-holder">
                                                                         <div class="qodef-e-icon">
                                                                             <span class="qodef-e-item-icon-text">
-                                                        <div class="qodef-m-image">
-                                                            <div class="qodef-m-media-image">
-                                                                <img width="800" height="889"
-                                                                    src="{{ asset($slide['img']) }}"
-                                                                    class="attachment-full size-full" alt=""
-                                                                    decoding="async" loading="lazy"
-                                                                    srcset="{{ asset($slide['img']) }} 800w, {{ asset($slide['img']) }} 270w, {{ asset($slide['img']) }} 768w, {{ asset($slide['img']) }} 495w, {{ asset($slide['img']) }} 550w, {{ asset($slide['img']) }} 450w"
-                                                                    sizes="(max-width: 800px) 100vw, 800px" />
-                                                            </div>
-                                                        </div>
+                                                                                <div class="qodef-m-image">
+                                                                                    <div class="qodef-m-media-image">
+                                                                                        <img width="800" height="889"
+                                                                                            src="{{ asset($slide['img']) }}"
+                                                                                            class="attachment-full size-full"
+                                                                                            alt=""
+                                                                                            decoding="async"
+                                                                                            loading="lazy"
+                                                                                            srcset="{{ asset($slide['img']) }} 800w, {{ asset($slide['img']) }} 270w, {{ asset($slide['img']) }} 768w, {{ asset($slide['img']) }} 495w, {{ asset($slide['img']) }} 550w, {{ asset($slide['img']) }} 450w"
+                                                                                            sizes="(max-width: 800px) 100vw, 800px" />
+                                                                                    </div>
+                                                                                </div>
                                                                             </span>
                                                                             <div class="qodef-e-number">
                                                                                 {{ $counter++ }} </div>
@@ -1049,8 +1071,8 @@
                         </div>
                     </div>
                 </section>
-              
-              
+
+
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-354be38f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                     data-id="354be38f" data-element_type="section">
@@ -1540,12 +1562,12 @@
                                                                             @if ($slide['category'] == 'NEWS')
                                                                                 </span> <a
                                                                                     href="{{ route('fronted.onlynews') }}"
-                                                                                    rel="category tag">{{  $slide['category'] === 'INSIGHTS' ? 'Trip' : $slide['category']  }}</a>
+                                                                                    rel="category tag">{{ $slide['category'] === 'INSIGHTS' ? 'Trip' : $slide['category'] }}</a>
                                                                                 </span> <!-- .cat-links -->
                                                                             @else
                                                                                 </span> <a
                                                                                     href="{{ route('fronted.onlyinsight') }}"
-                                                                                    rel="category tag">{{  $slide['category'] === 'INSIGHTS' ? 'Trip' : $slide['category'] }}</a> 
+                                                                                    rel="category tag">{{ $slide['category'] === 'INSIGHTS' ? 'Trip' : $slide['category'] }}</a>
                                                                                 </span> <!-- .cat-links -->
                                                                             @endif
 
@@ -1603,8 +1625,8 @@
                                 <div class="elementor-element elementor-element-16e31529 elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
                                     data-id="16e31529" data-element_type="widget"
                                     data-widget_type="qi_addons_for_elementor_animated_text.default">
-                                    <div class="elementor-widget-container" >
-                                        <div  
+                                    <div class="elementor-widget-container">
+                                        <div
                                             class="qodef-shortcode qodef-m  qodef-qi-animated-text qodef--animated-by-letter qodef--alignment-left qodef-qi--has-appear qodef--appear-from-right">
                                             <h1 class="qodef-m-title">
 
@@ -1643,7 +1665,7 @@
                     class="elementor-section elementor-top-section elementor-element elementor-element-69d2ad7f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="69d2ad7f" data-element_type="section"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-container elementor-column-gap-default"  style="justify-content: center;">
+                    <div class="elementor-container elementor-column-gap-default" style="justify-content: center;">
 
                         @if (!empty($masters[1]))
                             @foreach ($masters as $i => $slides)
@@ -1709,9 +1731,11 @@
                                                                             class="fab fa-instagram"></i> </span>
                                                                 </a>
                                                                 <a class="qodef-e-social-icon-link" itemprop="url"
-                                                                href="mailto:{{ $slide['gmail'] }}" target="_blank">
+                                                                    href="mailto:{{ $slide['gmail'] }}"
+                                                                    target="_blank">
                                                                     <span class="qodef-e-social-icon">
-                                                                        <i aria-hidden="true" class="far fa-envelope"></i>
+                                                                        <i aria-hidden="true"
+                                                                            class="far fa-envelope"></i>
                                                                     </span>
                                                                 </a>
                                                             </div>
@@ -1816,13 +1840,12 @@
                                     data-widget_type="qi_addons_for_elementor_typeout_text.default">
                                     <div class="elementor-widget-container">
                                         <?php
-                                            $header = preg_split("/[,\.\s]+/", $contact['words'], -1, PREG_SPLIT_NO_EMPTY);
+                                        $header = preg_split('/[,\.\s]+/', $contact['words'], -1, PREG_SPLIT_NO_EMPTY);
                                         ?>
                                         <div class="qodef-shortcode qodef-m qodef-qi-typeout-text"
                                             data-strings="[
-                                                @for ($i = 0; $i < count($header); $i++)
-                                                    &quot;{{ trim($header[$i]) }}&quot;@if($i + 1 < count($header)),@endif
-                                                @endfor
+                                                @for ($i = 0; $i < count($header) ; $i++)
+                                                    &quot;{{ trim($header[$i]) }}&quot;@if ($i + 1 < count($header)),@endif @endfor
                                             ]">
                                             <h2 class="qodef-m-text">
                                                 {{ $contact['wordtitle'] }}
@@ -1865,7 +1888,7 @@
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
                     <div class="elementor-background-overlay"></div>
                     <div class="elementor-container elementor-column-gap-default" style="justify-content: center">
- 
+
 
                         @if (!empty($footer[0]))
                             @foreach ($footer as $item)
@@ -1939,7 +1962,7 @@
                     </div>
                 </section>
             </div>
-                @include('fronted.layouts.components.contentinfo')
+            @include('fronted.layouts.components.contentinfo')
             @include('fronted.layouts.components.feedback')
 
         </div>
@@ -1970,7 +1993,7 @@
                 tabLink.addEventListener("click", function(e) {
                     e.preventDefault();
                     document.querySelectorAll(".qodef-tabs-horizontal-content").forEach(function(
-                    el) {
+                        el) {
                         el.style.display = "none";
                     });
                     var target = this.getAttribute("href");
