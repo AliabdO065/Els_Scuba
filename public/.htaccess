@@ -5,6 +5,18 @@
 
     RewriteEngine On
 
+    # Redirect www -> non-www (301). The domain is read from the request host,
+    # so this works for whatever domain the site is deployed on. Scheme is kept.
+    RewriteCond %{HTTPS} =on [OR]
+    RewriteCond %{HTTP:X-Forwarded-Proto} =https
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
