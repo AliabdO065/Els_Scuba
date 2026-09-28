@@ -1,4 +1,4 @@
-<div style="
+{{-- <div style="
     background-color: black;
     height: 710px;
     width: 100%;
@@ -16,9 +16,9 @@
     ">
        مرحبا بكم في موقعنا , برجاء تجديد الاشتراك الخاص بك لتتمكن من الاستمرار في استخدام خدماتنا
     </h1>
-</div>
+</div> --}}
 
-{{-- @extends('fronted.layouts.layout') --}}
+@extends('fronted.layouts.layout')
 @section('content')
     <link rel='stylesheet' id='elementor-icons-css'
         href='{{ asset('fronted/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min192d.css?ver=5.23.0') }}'
