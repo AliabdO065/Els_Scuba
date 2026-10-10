@@ -28,7 +28,7 @@ class ContactController extends Controller
     public function getContent2($row,$tabel){
         $slide = $tabel::find($row);
         $slides = json_decode($slide, true);
-        $contentasstring =  $slides['content'];
+        $contentasstring =  $slides['content'] ?? '';
         $content = explode('#xt#', $contentasstring);
         return $content;
     }
@@ -37,18 +37,18 @@ class ContactController extends Controller
     {
         $slide = Contact::find($row);
         $slides = json_decode($slide, true);
-        return $slides['content'];
+        return $slides['content'] ?? '';
     }
 
         public function getit($row, $tabel)
     {
         $slide = $tabel::find($row);
         $slides = json_decode($slide, true);
-        $contentasstring =  $slides['content'];
+        $contentasstring =  $slides['content'] ?? '';
         $content = explode('#x#', $contentasstring);
         $item = [];
         foreach ($content as $pair) {
-            list($key, $value) = explode('=#=', $pair);
+            list($key, $value) = array_pad(explode('=#=', $pair), 2, '');
             $item[$key] = $value;
         }
         return $item;
